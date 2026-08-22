@@ -2,15 +2,16 @@
 import { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
 
+const statuses = [
+  "STATUS: BUILDING",
+  "STATUS: CSE (AI), 2024–2028",
+  "CASE FILE: OPEN",
+  "STATUS: FAST LEARNING CURVE",
+];
+
 export function Terminal() {
   const [time, setTime] = useState("00:00:00");
   const [statusText, setStatusText] = useState("");
-  const statuses = [
-    "STATUS: BUILDING",
-    "STATUS: CSE (AI), 2024–2028",
-    "CASE FILE: OPEN",
-    "STATUS: FAST LEARNING CURVE",
-  ];
 
   useEffect(() => {
     const tickClock = () => {
