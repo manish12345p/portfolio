@@ -1,0 +1,56 @@
+.nav {
+  position: fixed;
+  top: 4vh;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 5vw;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  background: linear-gradient(to bottom, rgba(5,2,2,0.85), transparent);
+}
+
+.navMark {
+  color: var(--oxblood-bright);
+  letter-spacing: 0.35em;
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.2rem;
+}
+
+.navLinks a {
+  color: var(--bone-dim);
+  transition: color 0.3s var(--ease);
+  position: relative;
+}
+
+.navLinks a:hover {
+  color: var(--oxblood-glow);
+}
+
+.navLinks a.active {
+  color: var(--amber-bright);
+}
+
+.navLinks a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: var(--amber-bright);
+  box-shadow: 0 0 6px var(--amber-bright);
+}
+
+@media (max-width: 640px) {
+  .navLinks {
+    display: none;
+  }
+}

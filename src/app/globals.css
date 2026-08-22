@@ -1,26 +1,163 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --black: #120e0d;
+  --void: #1b1412;
+  --panel: #241512;
+  --bone: #f0ead9;
+  --bone-dim: #b9ae98;
+  --wine: #401019;
+  --oxblood: #7e1a2a;
+  --oxblood-bright: #c6304a;
+  --oxblood-glow: #e35270;
+  --gold: #c9a227;
+  --gold-bright: #f0d488;
+  --gold-dim: #8a7226;
+  --eden: #17392c;
+  --eden-bright: #2f9e6f;
+  --eden-glow: #6fe3ab;
+  --amber: #b9640f;
+  --amber-bright: #ff9f3d;
+  --amber-dim: #6c4517;
+  --cream: #e8d9b8;
+  --line: rgba(240,234,217,0.14);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--bone);
+  font-family: var(--font-cormorant), serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--oxblood-bright);
+  color: var(--bone);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- TYPOGRAPHY UTILS ---------- */
+.credits {
+  font-family: var(--font-oswald), sans-serif;
+  text-transform: uppercase;
+}
+
+.mono {
+  font-family: var(--font-ibm), monospace;
+}
+
+.title-huge {
+  font-family: var(--font-abril), serif;
+  font-size: clamp(3.2rem, 9vw, 7.5rem);
+  line-height: 0.86;
+  color: var(--bone);
+  text-shadow: 0 0 80px rgba(198, 48, 74, 0.3);
+}
+
+.title-huge .stroke {
+  -webkit-text-stroke: 1.5px var(--oxblood-bright);
+  color: transparent;
+  display: block;
+}
+
+/* ---------- SHARED UTILS ---------- */
+.grad-text {
+  background: linear-gradient(100deg, var(--oxblood) 0%, var(--oxblood-glow) 20%, var(--gold-bright) 32%, var(--oxblood-bright) 44%, var(--wine) 60%, var(--oxblood-glow) 78%, var(--oxblood) 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 9s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* Intersection Observer Reveal Utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 1s var(--ease), transform 1s var(--ease);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.d1 { transition-delay: 0.08s; }
+.reveal.d2 { transition-delay: 0.16s; }
+.reveal.d3 { transition-delay: 0.24s; }
+.reveal.d4 { transition-delay: 0.32s; }
+
+/* Buttons */
+.btn {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: 1px solid var(--oxblood-bright);
+  color: var(--oxblood-glow);
+  overflow: hidden;
+  transition: color 0.35s var(--ease), transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--oxblood-bright), var(--wine));
+  transform: translateX(-105%);
+  transition: transform 0.45s var(--ease);
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+.btn:hover {
+  color: var(--bone);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(198, 48, 74, 0.35);
+}
+
+.btn.ghost {
+  border-color: var(--gold-dim);
+  color: var(--bone-dim);
+}
+
+.btn.ghost::before {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+}
+
+.btn.ghost:hover {
+  color: var(--black);
+  box-shadow: 0 10px 30px rgba(201, 162, 39, 0.25);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

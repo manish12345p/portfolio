@@ -1,0 +1,52 @@
+/* ---------- MARQUEE ---------- */
+.marquee {
+  position: relative;
+  z-index: 5;
+  background: linear-gradient(90deg, var(--wine), var(--oxblood) 45%, var(--wine) 100%);
+  background-size: 200% 100%;
+  animation: marqueeBg 12s ease infinite;
+  border-top: 1px solid var(--oxblood-bright);
+  border-bottom: 1px solid var(--oxblood-bright);
+  overflow: hidden;
+  padding: 0.9rem 0;
+}
+
+@keyframes marqueeBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.marqueeTrack span {
+  font-family: var(--font-oswald), sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  padding: 0 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.marqueeTrack span::after {
+  content: "✦";
+  color: var(--oxblood-glow);
+  font-size: 0.7rem;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee { animation: none; }
+  .marqueeTrack { animation: none; }
+}
