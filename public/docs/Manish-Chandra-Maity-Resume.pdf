@@ -1,37 +1,31 @@
-%PDF-1.4
+%PDF-1.3
 %‚„œ”
 1 0 obj
 <<
-/Producer (pypdf)
-/Title (Manish Chandra Maity \055 Resume)
+/Type /Catalog
+/Pages 2 0 R
 >>
 endobj
 2 0 obj
 <<
 /Type /Pages
 /Count 1
-/Kids [ 4 0 R ]
+/Kids [ 3 0 R ]
 >>
 endobj
 3 0 obj
 <<
-/Type /Catalog
-/Pages 2 0 R
->>
-endobj
-4 0 obj
-<<
-/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 34 0 R 35 0 R 36 0 R 37 0 R ]
-/Contents 15 0 R
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R ]
+/Contents 18 0 R
 /MediaBox [ 0 0 595.2756 841.8898 ]
 /Resources <<
 /Font <<
-/F1 16 0 R
-/F1-0 17 0 R
-/F2+0 18 0 R
-/F2+0-0 22 0 R
-/F3+0 26 0 R
-/F4+0 30 0 R
+/F1 19 0 R
+/F1-0 20 0 R
+/F2+0 21 0 R
+/F2+0-0 25 0 R
+/F3+0 29 0 R
+/F4+0 33 0 R
 >>
 /ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
 >>
@@ -42,7 +36,7 @@ endobj
 /Parent 2 0 R
 >>
 endobj
-5 0 obj
+4 0 obj
 <<
 /A <<
 /S /URI
@@ -55,7 +49,7 @@ endobj
 /Type /Annot
 >>
 endobj
-6 0 obj
+5 0 obj
 <<
 /A <<
 /S /URI
@@ -68,7 +62,7 @@ endobj
 /Type /Annot
 >>
 endobj
-7 0 obj
+6 0 obj
 <<
 /A <<
 /S /URI
@@ -81,7 +75,7 @@ endobj
 /Type /Annot
 >>
 endobj
-8 0 obj
+7 0 obj
 <<
 /A <<
 /S /URI
@@ -94,7 +88,7 @@ endobj
 /Type /Annot
 >>
 endobj
-9 0 obj
+8 0 obj
 <<
 /A <<
 /S /URI
@@ -107,7 +101,7 @@ endobj
 /Type /Annot
 >>
 endobj
-10 0 obj
+9 0 obj
 <<
 /A <<
 /S /URI
@@ -120,7 +114,7 @@ endobj
 /Type /Annot
 >>
 endobj
-11 0 obj
+10 0 obj
 <<
 /A <<
 /S /URI
@@ -133,7 +127,7 @@ endobj
 /Type /Annot
 >>
 endobj
-12 0 obj
+11 0 obj
 <<
 /A <<
 /S /URI
@@ -146,7 +140,7 @@ endobj
 /Type /Annot
 >>
 endobj
-13 0 obj
+12 0 obj
 <<
 /A <<
 /S /URI
@@ -159,7 +153,7 @@ endobj
 /Type /Annot
 >>
 endobj
-14 0 obj
+13 0 obj
 <<
 /A <<
 /S /URI
@@ -172,18 +166,86 @@ endobj
 /Type /Annot
 >>
 endobj
+14 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [ 466.397411 103.1898 505.04956 112.7848 ]
+/Border [ 0 0 0 ]
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057BuildWithBharat\0554\0560\055Certificate\056pdf)
+>>
+/P 3 0 R
+>>
+endobj
 15 0 obj
 <<
-/Length 15982
+/Type /Annot
+/Subtype /Link
+/Rect [ 505.071625 92.38976 543.723773 101.98476 ]
+/Border [ 0 0 0 ]
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057Vivekananda\055Hackathon\055Certificate\056pdf)
+>>
+/P 3 0 R
+>>
+endobj
+16 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [ 515.717231 81.58976 535.03227 91.18476 ]
+/Border [ 0 0 0 ]
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057MedSure\055AI\055Presentation\056pdf)
+>>
+/P 3 0 R
+>>
+endobj
+17 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [ 438.232855 59.98976 476.885004 69.58476 ]
+/Border [ 0 0 0 ]
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057CodeFarming\055Certificate\056pdf)
+>>
+/P 3 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 16921
 >>
 stream
 q
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
 q
 1 0 0 1 51.7 789.8898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm 152.8943 0 Td /F2+0 17 Tf 20 TL (MANISH CHANDRA MAITY) Tj T* -152.8943 0 Td ET
+BT
+1 0 0 1 0 3 Tm
+152.8943 0 Td
+/F2+0 17 Tf
+20 TL
+(MANISH CHANDRA MAITY) Tj
+T*
+-152.8943 0 Td
+ET
 Q
 Q
 q
@@ -192,7 +254,17 @@ Q
 q
 1 0 0 1 51.7 777.3898 cm
 q
-BT 1 0 0 1 0 1.8 Tm 110.5927 0 Td 11 TL .34902 .34902 .34902 rg /F3+0 9.2 Tf 11 TL (B.Tech Computer Science & Engineering \(AI\) Student | Flutter Developer) Tj T* -110.5927 0 Td ET
+BT
+1 0 0 1 0 1.8 Tm
+110.5927 0 Td
+11 TL
+0.34902 0.34902 0.34902 rg
+/F3+0 9.2 Tf
+11 TL
+(B\056Tech Computer Science \046 Engineering \050AI\051 Student \174 Flutter Developer) Tj
+T*
+-110.5927 0 Td
+ET
 Q
 Q
 q
@@ -201,402 +273,1158 @@ Q
 q
 1 0 0 1 51.7 764.8898 cm
 q
-BT 1 0 0 1 0 1.8 Tm 29.49072 0 Td 11 TL .34902 .34902 .34902 rg /F3+0 9.2 Tf 11 TL (Delhi NCR  ) Tj (|) Tj (  +91 8287966702  ) Tj (|) Tj (  ) Tj .121569 .305882 .611765 rg (manishmaity39@gmail.com) Tj .34902 .34902 .34902 rg (  ) Tj (|) Tj (  ) Tj .121569 .305882 .611765 rg (linkedin.com/in/manish-chandra-maity-106a02321) Tj T* -29.49072 0 Td ET
+BT
+1 0 0 1 0 1.8 Tm
+29.49072 0 Td
+11 TL
+0.34902 0.34902 0.34902 rg
+/F3+0 9.2 Tf
+11 TL
+(Delhi NCR  ) Tj
+(\174) Tj
+(  \05391 8287966702  ) Tj
+(\174) Tj
+(  ) Tj
+0.121569 0.305882 0.611765 rg
+(manishmaity39\100gmail\056com) Tj
+0.34902 0.34902 0.34902 rg
+(  ) Tj
+(\174) Tj
+(  ) Tj
+0.121569 0.305882 0.611765 rg
+(linkedin\056com\057in\057manish\055chandra\055maity\055106a02321) Tj
+T*
+-29.49072 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 753.8898 cm
 q
-BT 1 0 0 1 0 1.8 Tm 106.4194 0 Td 11 TL .121569 .305882 .611765 rg /F3+0 9.2 Tf 11 TL (github.com/manish12345p) Tj .34902 .34902 .34902 rg (  ) Tj (|) Tj (  ) Tj .121569 .305882 .611765 rg (portfolio-manish-chandra-maityv.vercel.app) Tj T* -106.4194 0 Td ET
+BT
+1 0 0 1 0 1.8 Tm
+106.4194 0 Td
+11 TL
+0.121569 0.305882 0.611765 rg
+/F3+0 9.2 Tf
+11 TL
+(github\056com\057manish12345p) Tj
+0.34902 0.34902 0.34902 rg
+(  ) Tj
+(\174) Tj
+(  ) Tj
+0.121569 0.305882 0.611765 rg
+(portfolio\055manish\055chandra\055maityv\056vercel\056app) Tj
+T*
+-106.4194 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 739.3898 cm
 q
-.121569 .305882 .611765 rg
-BT 1 0 0 1 0 1.4 Tm /F2+0 9.6 Tf 11 TL (SUMMARY) Tj T* ET
+0.121569 0.305882 0.611765 rg
+BT
+1 0 0 1 0 1.4 Tm
+/F2+0 9.6 Tf
+11 TL
+(SUMMARY) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 737.8898 cm
 q
-.5 w
+0.5 w
 1 J
-.74902 .74902 .74902 RG
-n 0 0 m 491.8756 0 l S
+0.74902 0.74902 0.74902 RG
+n
+0 0 m
+491.8756 0 l
+S
 Q
 Q
 q
 1 0 0 1 51.7 705.2898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 21.9 Tm /F3+0 8.7 Tf 10.2 TL (B.Tech CSE \(AI\) student who builds production Flutter apps with BLoC and clean architecture. Built a live client CRM with 1,500+ service) Tj T* (visits logged, shipped screens and an admin app for a Play Store exam-prep app, restored a live Play Store app on a current Flutter version,) Tj T* (and does manual QA on a 12-module college ERP. Seeking a Flutter developer internship where I can keep building production software.) Tj T* ET
+BT
+1 0 0 1 0 21.9 Tm
+/F3+0 8.7 Tf
+10.2 TL
+(B\056Tech CSE \050AI\051 student who builds production Flutter apps with BLoC and clean architecture\056 Built a live client CRM with 1\054500\053 service) Tj
+T*
+(visits logged\054 shipped screens and an admin app for a Play Store exam\055prep app\054 restored a live Play Store app on a current Flutter version\054) Tj
+T*
+(and does manual QA on a 12\055module college ERP\056 Seeking a Flutter developer internship where I can keep building production software\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 690.7898 cm
 q
-.121569 .305882 .611765 rg
-BT 1 0 0 1 0 1.4 Tm /F2+0 9.6 Tf 11 TL (EDUCATION) Tj T* ET
+0.121569 0.305882 0.611765 rg
+BT
+1 0 0 1 0 1.4 Tm
+/F2+0 9.6 Tf
+11 TL
+(EDUCATION) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 689.2898 cm
 q
-.5 w
+0.5 w
 1 J
-.74902 .74902 .74902 RG
-n 0 0 m 491.8756 0 l S
+0.74902 0.74902 0.74902 RG
+n
+0 0 m
+491.8756 0 l
+S
 Q
 Q
 q
 1 0 0 1 51.7 677.0898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (KCC Institute of Technology & Management \(AKTU\) \001 B.Tech, Computer Science & Engineering \(AI\)) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (2024 \001 2028) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(KCC Institute of Technology \046 Management \050AKTU\051 \001 B\056Tech\054 Computer Science \046 Engineering \050AI\051) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(2024 \001 2028) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 666.8898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Vinay Nagar Bengali Senior Secondary School \001 Class XII) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (2022 \001 2023) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Vinay Nagar Bengali Senior Secondary School \001 Class XII) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(2022 \001 2023) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 652.3898 cm
 q
-.121569 .305882 .611765 rg
-BT 1 0 0 1 0 1.4 Tm /F2+0 9.6 Tf 11 TL (TECHNICAL SKILLS) Tj T* ET
+0.121569 0.305882 0.611765 rg
+BT
+1 0 0 1 0 1.4 Tm
+/F2+0 9.6 Tf
+11 TL
+(TECHNICAL SKILLS) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 650.8898 cm
 q
-.5 w
+0.5 w
 1 J
-.74902 .74902 .74902 RG
-n 0 0 m 491.8756 0 l S
+0.74902 0.74902 0.74902 RG
+n
+0 0 m
+491.8756 0 l
+S
 Q
 Q
 q
 1 0 0 1 51.7 638.6898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Languages:) Tj /F3+0 8.7 Tf 10.2 TL ( Dart, Python, Java, C, SQL) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Languages\072) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( Dart\054 Python\054 Java\054 C\054 SQL) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 617.6898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 11.7 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Frameworks & Libraries:) Tj /F3+0 8.7 Tf 10.2 TL ( Flutter \(BLoC, Clean Architecture, SOLID, Freezed / JSON serialization, very_good_cli, package-based) Tj T* -0.5 0 Td (structure\), FastAPI, aiogram; familiar with Next.js and React) Tj T* ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Frameworks \046 Libraries\072) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( Flutter \050BLoC\054 Clean Architecture\054 SOLID\054 Freezed \057 JSON serialization\054 very\137good\137cli\054 package\055based) Tj
+T*
+-0.5 0 Td
+(structure\051\054 FastAPI\054 aiogram\073 familiar with Next\056js and React) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 606.8898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Backend, Data & Testing:) Tj /F3+0 8.7 Tf 10.2 TL ( Firebase, Supabase \(learning\), REST APIs \(CRUD\), manual QA and defect reporting) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Backend\054 Data \046 Testing\072) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( Firebase\054 Supabase \050learning\051\054 REST APIs \050CRUD\051\054 manual QA and defect reporting) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 596.0898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Tools & Platforms:) Tj /F3+0 8.7 Tf 10.2 TL ( Git/GitHub, Vercel, FileZilla; prompt engineering and AI-assisted development) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Tools \046 Platforms\072) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( Git\057GitHub\054 Vercel\054 FileZilla\073 prompt engineering and AI\055assisted development) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 581.5898 cm
 q
-.121569 .305882 .611765 rg
-BT 1 0 0 1 0 1.4 Tm /F2+0 9.6 Tf 11 TL (EXPERIENCE) Tj T* ET
+0.121569 0.305882 0.611765 rg
+BT
+1 0 0 1 0 1.4 Tm
+/F2+0 9.6 Tf
+11 TL
+(EXPERIENCE) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 580.0898 cm
 q
-.5 w
+0.5 w
 1 J
-.74902 .74902 .74902 RG
-n 0 0 m 491.8756 0 l S
+0.74902 0.74902 0.74902 RG
+n
+0 0 m
+491.8756 0 l
+S
 Q
 Q
 q
 1 0 0 1 51.7 567.8898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (StuckNot) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Dec 2024 \001 Present) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(StuckNot) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(Dec 2024 \001 Present) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 557.6898 cm
 q
-.34902 .34902 .34902 rg
-BT 1 0 0 1 0 1.6 Tm /F4+0 8.6 Tf 10.2 TL (Flutter Developer Intern \(Dec 2024 \001 Feb 2025\) | Engineer Intern \(May \001 Jul 2025\) | Freelance Developer \(2026 \001 Present\)) Tj T* ET
+0.34902 0.34902 0.34902 rg
+BT
+1 0 0 1 0 1.6 Tm
+/F4+0 8.6 Tf
+10.2 TL
+(Flutter Developer Intern \050Dec 2024 \001 Feb 2025\051 \174 Engineer Intern \050May \001 Jul 2025\051 \174 Freelance Developer \0502026 \001 Present\051) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 545.0898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (StuckNot App) Tj /F3+0 8.7 Tf 10.2 TL ( \001 live exam-prep app on ) Tj .121569 .305882 .611765 rg (Google Play) Tj 0 0 0 rg (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Flutter, BLoC) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(StuckNot App) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \001 live exam\055prep app on ) Tj
+0.121569 0.305882 0.611765 rg
+(Google Play) Tj
+0 0 0 rg
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(Flutter\054 BLoC) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 534.4898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 1.5 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Developed core screens: search with custom delegate, profile and edit profile, transaction history and purchased-subject orders.) Tj T* -0.5 0 Td ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Developed core screens\072 search with custom delegate\054 profile and edit profile\054 transaction history and purchased\055subject orders\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 521.8898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (StuckNot Admin App) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Flutter) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(StuckNot Admin App) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(Flutter) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 501.0898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 11.7 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Independently built a standalone admin app for managing 90+ sample-paper PDFs \(code, subject, year, semester\) with search, delete) Tj T* -0.5 0 Td (and lock/unlock controls.) Tj T* ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Independently built a standalone admin app for managing 90\053 sample\055paper PDFs \050code\054 subject\054 year\054 semester\051 with search\054 delete) Tj
+T*
+-0.5 0 Td
+(and lock\057unlock controls\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 488.4898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Baani.Net Live Gurbani Kirtan \001 App Restoration) Tj /F3+0 8.7 Tf 10.2 TL ( \001 live on ) Tj .121569 .305882 .611765 rg (Google Play) Tj 0 0 0 rg (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Flutter, Gradle) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Baani\056Net Live Gurbani Kirtan \001 App Restoration) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \001 live on ) Tj
+0.121569 0.305882 0.611765 rg
+(Google Play) Tj
+0 0 0 rg
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(Flutter\054 Gradle) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 457.4898 cm
 q
-BT 1 0 0 1 2 21.9 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 21.9 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 21.9 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Helped restore a live Play Store app \(100K+ downloads\) originally built on a much older Flutter version: upgraded the project to a) Tj T* -0.5 0 Td (current Flutter version and updated the Gradle configuration and dependencies, using prompt engineering and AI-assisted) Tj T* (development.) Tj T* ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 21.9 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Helped restore a live Play Store app \050100K\053 downloads\051 originally built on a much older Flutter version\072 upgraded the project to a) Tj
+T*
+-0.5 0 Td
+(current Flutter version and updated the Gradle configuration and dependencies\054 using prompt engineering and AI\055assisted) Tj
+T*
+(development\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 444.8898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (StuckNot Website v2) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Next.js) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(StuckNot Website v2) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(React\056js\054 AI\055assisted development) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 434.2898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 1.5 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Built the UI for v2 of StuckNot's official website.) Tj T* -0.5 0 Td ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Built the UI for v2 of StuckNot\047s official website in React\056js\054 using prompt engineering and AI\055assisted development\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 421.6898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (CampusMaster \001 College ERP \(QA\)) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (12 modules, deployed at Maples College) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(CampusMaster \001 College ERP \050QA\051) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(12 modules\054 deployed at Maples College) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 411.0898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 1.5 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Performed manual QA on every module: tested functionality, flows, validations and alerts.) Tj T* -0.5 0 Td ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Performed manual QA on every module\072 tested functionality\054 flows\054 validations and alerts\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 390.0898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 11.7 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Logged 60+ defects in the ERP's issue tracker with module, error details, assigned developer and severity; most were resolved with the) Tj T* -0.5 0 Td (senior full-stack developer.) Tj T* ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Logged 60\053 defects in the ERP\047s issue tracker with module\054 error details\054 assigned developer and severity\073 most were resolved with the) Tj
+T*
+-0.5 0 Td
+(senior full\055stack developer\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 377.4898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (StuckNot Studio \001 AI Carousel Generator) Tj /F3+0 8.7 Tf 10.2 TL (  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Gemini, AI-assisted development) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(StuckNot Studio \001 AI Carousel Generator) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(Gemini\054 AI\055assisted development) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 356.6898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 11.7 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Contributed to a tool where users enter brand assets \(logo, colors, fonts, images\) and choose a carousel type, and Gemini generates the) Tj T* -0.5 0 Td (content and visuals for branded multi-slide carousels.) Tj T* ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Contributed to a tool where users enter brand assets \050logo\054 colors\054 fonts\054 images\051 and choose a carousel type\054 and Gemini generates the) Tj
+T*
+-0.5 0 Td
+(content and visuals for branded multi\055slide carousels\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 342.1898 cm
 q
-.121569 .305882 .611765 rg
-BT 1 0 0 1 0 1.4 Tm /F2+0 9.6 Tf 11 TL (PROJECTS) Tj T* ET
+0.121569 0.305882 0.611765 rg
+BT
+1 0 0 1 0 1.4 Tm
+/F2+0 9.6 Tf
+11 TL
+(PROJECTS) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 340.6898 cm
 q
-.5 w
+0.5 w
 1 J
-.74902 .74902 .74902 RG
-n 0 0 m 491.8756 0 l S
+0.74902 0.74902 0.74902 RG
+n
+0 0 m
+491.8756 0 l
+S
 Q
 Q
 q
 1 0 0 1 51.7 328.0898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Dashmesh Mechanix \001 Flutter CRM for a Service-Business Client) Tj /F3+0 8.7 Tf 10.2 TL ( | Flutter, BLoC, Freezed, Supabase  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (StuckNot client engagement) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Dashmesh Mechanix \001 Flutter CRM for a Service\055Business Client) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \174 Flutter\054 BLoC\054 Freezed\054 Supabase  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(StuckNot client engagement) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 297.0898 cm
 q
-BT 1 0 0 1 2 21.9 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 21.9 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 21.9 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Built v1 with the StuckNot team, then rebuilt the app solo as v2, replacing Excel sheets with customer records, visit history, service) Tj T* -0.5 0 Td (calendar, payments and EMI tracking, and estimates. Used live by the client: 1,500+ service visits logged, 200+ of them in the last 2) Tj T* (months.) Tj T* ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 21.9 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Built v1 with the StuckNot team\054 then rebuilt the app solo as v2\054 replacing Excel sheets with customer records\054 visit history\054 service) Tj
+T*
+-0.5 0 Td
+(calendar\054 payments and EMI tracking\054 and estimates\056 Used live by the client\072 1\054500\053 service visits logged\054 200\053 of them in the last 2) Tj
+T*
+(months\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 286.2898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 1.5 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Structured the codebase as modular packages \(Very Good CLI\) using BLoC, Freezed/JSON serialization, clean architecture and SOLID.) Tj T* -0.5 0 Td ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Structured the codebase as modular packages \050Very Good CLI\051 using BLoC\054 Freezed\057JSON serialization\054 clean architecture and SOLID\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 275.4898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 1.5 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Migrated the backend from Firebase to Supabase by swapping only the data-source layer, and moved the existing records across.) Tj T* -0.5 0 Td ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Migrated the backend from Firebase to Supabase by swapping only the data\055source layer\054 and moved the existing records across\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 254.4898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 11.7 Tm .5 0 Td 10.2 TL 0 0 0 rg /F3+0 8.7 Tf 10.2 TL (Built an EMI module \(installments, due dates, overdue and paid status\) linked to customer and service records, so payments made from) Tj T* -0.5 0 Td (the EMI page or the customer profile stay in sync. Repo: ) Tj .121569 .305882 .611765 rg (github.com/manish12345p/dashmeshro) Tj T* ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F3+0 8.7 Tf
+10.2 TL
+(Built an EMI module \050installments\054 due dates\054 overdue and paid status\051 linked to customer and service records\054 so payments made from) Tj
+T*
+-0.5 0 Td
+(the EMI page or the customer profile stay in sync\056 Repo\072 ) Tj
+0.121569 0.305882 0.611765 rg
+(github\056com\057manish12345p\057dashmeshro) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 241.8898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (QueuelessBharat \001 Emergency Hospital Finder) Tj /F3+0 8.7 Tf 10.2 TL ( | Next.js, Vercel  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (Build With Bharat 4.0 hackathon project) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(QueuelessBharat \001 Emergency Hospital Finder) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \174 React\056js\054 Vercel  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(Build With Bharat 4\0560 hackathon project) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 221.0898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 11.7 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Web platform that helps emergency patients find nearby hospitals with free beds, see whether a doctor is on duty and the hospital's) Tj T* -0.5 0 Td (condition, and book an ambulance, without searching or queuing.) Tj T* ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Web platform that helps emergency patients find nearby hospitals with free beds\054 see whether a doctor is on duty and the hospital\047s) Tj
+T*
+-0.5 0 Td
+(condition\054 and book an ambulance\054 without searching or queuing\056) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 200.0898 cm
 q
-BT 1 0 0 1 2 11.7 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 11.7 Tm .5 0 Td 10.2 TL 0 0 0 rg /F3+0 8.7 Tf 10.2 TL (Front-end engineer with backend support on the team; live on Vercel, still under development. Team repo:) Tj T* -0.5 0 Td .121569 .305882 .611765 rg (github.com/codedbymuskann/QueueLess_Bharat_) Tj T* ET
+BT
+1 0 0 1 2 11.7 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 11.7 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F3+0 8.7 Tf
+10.2 TL
+(Front\055end engineer with backend support on the team\073 live on Vercel\054 still under development\056 Team repo\072) Tj
+T*
+-0.5 0 Td
+0.121569 0.305882 0.611765 rg
+(github\056com\057codedbymuskann\057QueueLess\137Bharat\137) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 187.4898 cm
 q
-BT 1 0 0 1 0 1.5 Tm 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (SnackTrack \001 Team Project \(5\0026 members\)) Tj /F3+0 8.7 Tf 10.2 TL ( | Flutter, clean architecture  ) Tj .34902 .34902 .34902 rg /F4+0 8.7 Tf 10.2 TL (StuckNot project, Mar \001 Jul 2025) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(SnackTrack \001 Team Project \0505\0026 members\051) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \174 Flutter\054 clean architecture  ) Tj
+0.34902 0.34902 0.34902 rg
+/F4+0 8.7 Tf
+10.2 TL
+(StuckNot project\054 Mar \001 Jul 2025) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 176.8898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
 0 0 0 rg
-BT 1 0 0 1 11 1.5 Tm .5 0 Td /F3+0 8.7 Tf 10.2 TL (Built the login and sign-up UI.) Tj T* -0.5 0 Td ET
+<7f> Tj
+ET
+0 0 0 rg
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+/F3+0 8.7 Tf
+10.2 TL
+(Built the login and sign\055up UI\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 164.2898 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 1.5 Tm /F2+0 8.7 Tf 10.2 TL (Other Projects) Tj T* ET
+BT
+1 0 0 1 0 1.5 Tm
+/F2+0 8.7 Tf
+10.2 TL
+(Other Projects) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 153.6898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (To-do App) Tj /F3+0 8.7 Tf 10.2 TL ( \(Flutter, Python FastAPI\): mobile app with a self-written REST API \(CRUD\). ) Tj .121569 .305882 .611765 rg (github.com/manish12345p/todolist) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(To\055do App) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \050Flutter\054 Python FastAPI\051\072 mobile app with a self\055written REST API \050CRUD\051\056 ) Tj
+0.121569 0.305882 0.611765 rg
+(github\056com\057manish12345p\057todolist) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 142.8898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Telegram Bot) Tj /F3+0 8.7 Tf 10.2 TL ( \(Python, aiogram, OpenAI API\): async bot that answers messages using an LLM. ) Tj .121569 .305882 .611765 rg (github.com/manish12345p/chatbot) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Telegram Bot) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \050Python\054 aiogram\054 OpenAI API\051\072 async bot that answers messages using an LLM\056 ) Tj
+0.121569 0.305882 0.611765 rg
+(github\056com\057manish12345p\057chatbot) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 132.0898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (User Details API) Tj /F3+0 8.7 Tf 10.2 TL ( \(Python, FastAPI\): RESTful API with POST, GET, PUT and DELETE endpoints, Pydantic models and route versioning.) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(User Details API) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \050Python\054 FastAPI\051\072 RESTful API with POST\054 GET\054 PUT and DELETE endpoints\054 Pydantic models and route versioning\056) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 117.5898 cm
 q
-.121569 .305882 .611765 rg
-BT 1 0 0 1 0 1.4 Tm /F2+0 9.6 Tf 11 TL (HACKATHONS) Tj T* ET
+0.121569 0.305882 0.611765 rg
+BT
+1 0 0 1 0 1.4 Tm
+/F2+0 9.6 Tf
+11 TL
+(HACKATHONS) Tj
+T*
+ET
 Q
 Q
 q
 1 0 0 1 51.7 116.0898 cm
 q
-.5 w
+0.5 w
 1 J
-.74902 .74902 .74902 RG
-n 0 0 m 491.8756 0 l S
+0.74902 0.74902 0.74902 RG
+n
+0 0 m
+491.8756 0 l
+S
 Q
 Q
 q
 1 0 0 1 51.7 103.8898 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Build With Bharat 4.0) Tj /F3+0 8.7 Tf 10.2 TL ( \(national level, CodeVerse x KCC\): PPT round with team The Malwares \(QueuelessBharat\)) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Build With Bharat 4\0560) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \050national level\054 CodeVerse x KCC\051\072 PPT round with team The Malwares \050QueuelessBharat\051) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 93.08976 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Vivekananda Innovation Hackathon 2026) Tj /F3+0 8.7 Tf 10.2 TL ( \(DTU and Vivekananda Institute of Values, 27 Sep 2026\): online screening round) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Vivekananda Innovation Hackathon 2026) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \050DTU and Vivekananda Institute of Values\054 27 Sep 2026\051\072 online screening round) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 82.28976 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (EY Techathon 6.0) Tj /F3+0 8.7 Tf 10.2 TL (: frontend developer on team Bug Hunters \(MedSure AI, an agentic-AI concept for healthcare provider data\)) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(EY Techathon 6\0560) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(\072 frontend developer on team Bug Hunters \050MedSure AI\054 an agentic\055AI concept for healthcare provider data\051) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 71.48976 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Smart India Hackathon 2025 and 2026) Tj /F3+0 8.7 Tf 10.2 TL (: participated with problem statements SIH25032 and SIH26184) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Smart India Hackathon 2025 and 2026) Tj
+/F3+0 8.7 Tf
+10.2 TL
+(\072 participated with problem statements SIH25032 and SIH26184) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
 q
 1 0 0 1 51.7 60.68976 cm
 q
-BT 1 0 0 1 2 1.5 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
-BT 1 0 0 1 11 1.5 Tm .5 0 Td 10.2 TL 0 0 0 rg /F2+0 8.7 Tf 10.2 TL (Code Farming) Tj /F3+0 8.7 Tf 10.2 TL ( \(24-hour code-a-thon on HackerRank, Voyager Coding Club, 29\00230 Apr 2026\): participant) Tj T* -0.5 0 Td ET
+BT
+1 0 0 1 2 1.5 Tm
+/F1 10 Tf
+12 TL
+0 0 0 rg
+<7f> Tj
+ET
+BT
+1 0 0 1 11 1.5 Tm
+0.5 0 Td
+10.2 TL
+0 0 0 rg
+/F2+0 8.7 Tf
+10.2 TL
+(Code Farming) Tj
+/F3+0 8.7 Tf
+10.2 TL
+( \05024\055hour code\055a\055thon on HackerRank\054 Voyager Coding Club\054 29\00230 Apr 2026\051\072 participant) Tj
+T*
+-0.5 0 Td
+ET
 Q
 Q
- 
-
 Q
-
 q
 0.0 0.0 595.2756 841.8898 re
 W
@@ -672,10 +1500,9 @@ T*
 ET
 Q
 
-
 endstream
 endobj
-16 0 obj
+19 0 obj
 <<
 /BaseFont /Helvetica
 /Encoding /WinAnsiEncoding
@@ -684,7 +1511,7 @@ endobj
 /Type /Font
 >>
 endobj
-17 0 obj
+20 0 obj
 <<
 /BaseFont /Helvetica
 /Encoding /WinAnsiEncoding
@@ -693,27 +1520,27 @@ endobj
 /Type /Font
 >>
 endobj
-18 0 obj
+21 0 obj
 <<
 /BaseFont /AAAAAA+Carlito-Bold
 /FirstChar 0
-/FontDescriptor 19 0 R
+/FontDescriptor 22 0 R
 /LastChar 127
 /Name /F2+0
 /Subtype /TrueType
-/ToUnicode 21 0 R
+/ToUnicode 24 0 R
 /Type /Font
 /Widths [ 0 905.2734 498.0469 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 226.0742 325.6836 438.4766 498.0469 506.8359 729.0039 704.5898 233.3984 311.5234 311.5234 498.0469 498.0469 257.8125 306.1523 267.0898 429.6875 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 275.8789 275.8789 498.0469 498.0469 498.0469 463.3789 898.4375 605.957 560.5469 529.2969 630.3711 487.793 458.9844 637.207 630.8594 266.6016 331.0547 546.875 422.8516 874.0234 658.6914 676.2695 532.2266 686.0352 562.9883 472.6562 495.1172 652.832 591.3086 906.25 550.7812 519.5312 478.0273 324.707 429.6875 324.707 498.0469 498.0469 300.293 493.6523 536.6211 418.457 536.6211 503.418 316.4062 474.1211 536.6211 245.6055 255.3711 479.9805 245.6055 813.4766 536.6211 537.5977 536.6211 536.6211 355.4688 398.9258 346.6797 536.6211 473.1445 745.1172 459.4727 473.6328 397.4609 343.75 475.0977 343.75 498.0469 506.8359 ]
 >>
 endobj
-19 0 obj
+22 0 obj
 <<
 /Ascent 750
 /CapHeight 648.4375
 /Descent -250
 /Flags 262148
 /FontBBox [ -501.4648 -272.4609 1164.551 1019.531 ]
-/FontFile2 20 0 R
+/FontFile2 23 0 R
 /FontName /AAAAAA+Carlito-Bold
 /ItalicAngle 0
 /MissingWidth 506.8359
@@ -721,7 +1548,7 @@ endobj
 /Type /FontDescriptor
 >>
 endobj
-20 0 obj
+23 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length1 22196
@@ -789,7 +1616,7 @@ e∞¶’K-Íì®öâ¡C›±·LÜ _ì;√tÅ<ÿ‚Ÿp"eÁœ`ò’¯öo}ãˇÒﬂﬁ ﬂΩ Ÿm¶≤9„ƒ<7';ë_≤°ﬂ)≈
 ]	◊º{.SÇˆ1ªQ„Aÿ3ø˙\7¬’◊∏¥p5¿’◊r∏ö‡⁄Œ§–'‡:u,á´ÆìÏ4.M†Ør?Å	y]¡5¢ØD{ÿ_°}Ï„hä∑¢jX/Ìd‹ËSÃ√H√ç¢Qv⁄*…°õ¯têﬂÑ\+⁄Õ_âÍπ£PÊª»œ˛È¯:¥É˚*¬“4í√ÙórAXQ¸;r3w£€ÅÁ∑‡æ⁄˜√Öòh)˚'‘≈u£√l’¿ΩÖì¢Êd`øè‚|%˛_4ƒ(gæ¡˛mÅÙïícË°Áñ¢f∏"eò◊–6∂%ôo#=<oaøáî¸_ëî˝"*a_ÄC5Ã≥h%˚"æÓD÷A˛õ‰WP˚Ghß≈ÿwPî}â–ß§¸s¥ú¥„ˆ zΩé˛ä˛ä·cåçπü˝w'˜o<‚´¯«¯üJLíÑdH≤_Úº‰ØRát±t≥ÙNôCV+˚πúëW 'ÂüîgÂØ*V [¨|X•Ru™ˆ©ÓW3Íà∫U}´˙5ıü5ã4G4/h%⁄QÌÈwIg…≠%œ	6açpªúê”ïÈVÍ>£{Z˜∂˛∞¡`∏Œàå◊_2}÷Ù™ÈØfóy´˘:Û{ñvÀΩ÷†ıyõ¡vØ=a?f“°p,s\Á8[⁄\:P˙zô∑,Qv´SÊÏt>Í¸©´÷µ‹uÿı$’–)Ù.xèõa’√†^¥öD6–/{íê∑ZÙ49ß¡ëÌÒáÈú'iå4îO3HÜN“,¯£Ø“,˝~]HÛ»ÜôBZÇ,ÿQHK—$Æ*§e(ÅÔ)§Â®øPH+–F¸v!≠DµLo!≠öóVc7ËL>≠A’Ïc®mG;–¥m˚ªÌA.TIY0	©»ôÄ{ä≠@≥Ë]–ˇ]pﬂÔ∆iâh/‹7Bﬁ.¥ûÉ¥¶=PÛnTè‚o-ªË÷Aﬂ«ÅräÊná†Ê	4	©m@≥Ú«/hØ¸¢ˆ[·⁄ä÷èÄæÄ◊*‘ ˘Ä´%ê∫ê6:K}qä˘+°m¬ı&⁄æk^≠∑¶M¥œcpÌÅ¸1†òÄﬁö-ê∑zÊ*G èA+Î!g	»b<ÌF·©>7AπıÙ><¸£%>˙ÌáÛºõ÷øõJa”,Ø;ËàåAI2˛$5o∑¬å‡•_O{∑çr6FÎçÕé{~‘Ø†ˇbPné∑ıóÙtﬁMÀÛ‘Y–,eàÏˆ@Ñ˜âYÆ∑“rÆ	{©ÑH\TÀ&hÈ.D~Û≥áˆe€5/π†Ü‰\^bÖ9pπvÁd∏ÆMtú÷QMv«ymœK∏ÊGMÔπ∏.ôª°V"˚T˚cîã≠p'≥iºÔÅñ¸KKDˇfÓFœ°À¸u}w˘‡)åoŒ|E∆e‹ï≈ûˆ,ÎŸë5w∏\Ÿ‡Ë$˘ôøŸﬂM[óe<ÌO*±$Ù§J¯»<…ÂÀ€üT…§°S‹~ ãoËÃ¶o<%a€O˘…”ó9D1˝±ã/„ôk≥‹ßNÒå¸?Gûœ
 endstream
 endobj
-21 0 obj
+24 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length 681
@@ -799,27 +1626,27 @@ xúu’Àj€PÖ·πüB√ñRÏ£}K¡ri É^h˙é,ßÜXä3»€w//ìJ+∞˜/§É?`œØÔnÓÜ›±ôü›}l∂ªa3ıœáó
 üﬂŒ•†§
 endstream
 endobj
-22 0 obj
+25 0 obj
 <<
 /BaseFont /AAAAAA+Carlito-Regular
 /FirstChar 0
-/FontDescriptor 23 0 R
+/FontDescriptor 26 0 R
 /LastChar 127
 /Name /F2+0
 /Subtype /TrueType
-/ToUnicode 25 0 R
+/ToUnicode 28 0 R
 /Type /Font
 /Widths [ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 226.0742 325.6836 400.8789 498.0469 506.8359 714.8438 682.1289 220.7031 303.2227 303.2227 498.0469 498.0469 249.5117 306.1523 252.4414 386.2305 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 267.5781 267.5781 498.0469 498.0469 498.0469 463.3789 894.043 578.6133 543.9453 533.2031 615.2344 488.2812 459.4727 630.8594 623.0469 251.9531 318.8477 519.5312 420.4102 854.9805 645.5078 662.1094 516.6016 672.8516 542.9688 459.4727 487.3047 641.6016 567.3828 889.6484 519.043 487.3047 468.2617 306.6406 386.2305 306.6406 498.0469 498.0469 291.0156 479.0039 525.3906 422.8516 525.3906 497.5586 305.1758 470.7031 525.3906 229.4922 239.2578 454.5898 229.4922 798.8281 525.3906 527.3438 525.3906 525.3906 348.6328 391.1133 334.9609 525.3906 451.6602 714.8438 433.1055 452.6367 395.0195 314.4531 460.4492 314.4531 498.0469 506.8359 ]
 >>
 endobj
-23 0 obj
+26 0 obj
 <<
 /Ascent 750
 /CapHeight 641.6016
 /Descent -250
 /Flags 4
 /FontBBox [ -489.2578 -258.3008 1147.949 1014.648 ]
-/FontFile2 24 0 R
+/FontFile2 27 0 R
 /FontName /AAAAAA+Carlito-Regular
 /ItalicAngle 0
 /MissingWidth 506.8359
@@ -827,7 +1654,7 @@ endobj
 /Type /FontDescriptor
 >>
 endobj
-24 0 obj
+27 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length1 20884
@@ -892,7 +1719,7 @@ J£=†£Ωh⁄ä&—~‰B¬«äAm ûlÅ2çF†≈Nh≥⁄ª ˇΩPnáwcBèË îìl/⁄˜a§˝0Ú>Tã ‡w´–w⁄çÇ≠
 ôŸ£⁄O	R†ÿ	%ë≤≠~5å–ı?ÏE4Ö3˘øÅW˛tæÄ^Ìú¡¯TÊã2P:cÆ,Êõ≥4?ï5∑∏\Ÿ¿˘7Vãˇh4KÒÕîXRzA%Å|d.0yK_ÛïLZ:#¡Õ3≈¯dÔ`6yrpFB7œ¯»›"∑∏9?/‡˘„YÊéVJ˛cÄ·X
 endstream
 endobj
-25 0 obj
+28 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length 675
@@ -909,27 +1736,27 @@ xú}’Àj€PÖ·πûB√ñRÏ„}K¡“§Åz°È8∂úbY»ˆ oﬂΩºLr(•{ˇB:ËõÌ…Õ˝Ì}ø=∂ì„~ı–€Õ∂_è›a
 ø—o˝ø—o˝ø—o˝ø—o˝ø—o˝ø—o˝ø—o˝ø—o˝ø”Ô;˝ø”Ô;˝ø”Ô;˝ø”Ô;˝ø”Ô;˝ø”Ô;˝ø”Ô;˝ø”Ô;˝–˝–˝–˝–˝–˝–˝–˝–˝óqŸÿX{Øãhu«‹QÁ›x^<X9€æ{]ü√~¿)¸˛ #Å§ä
 endstream
 endobj
-26 0 obj
+29 0 obj
 <<
 /BaseFont /AAAAAA+Carlito-Regular
 /FirstChar 0
-/FontDescriptor 27 0 R
+/FontDescriptor 30 0 R
 /LastChar 127
 /Name /F3+0
 /Subtype /TrueType
-/ToUnicode 29 0 R
+/ToUnicode 32 0 R
 /Type /Font
 /Widths [ 0 905.2734 498.0469 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 226.0742 325.6836 400.8789 498.0469 506.8359 714.8438 682.1289 220.7031 303.2227 303.2227 498.0469 498.0469 249.5117 306.1523 252.4414 386.2305 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 267.5781 267.5781 498.0469 498.0469 498.0469 463.3789 894.043 578.6133 543.9453 533.2031 615.2344 488.2812 459.4727 630.8594 623.0469 251.9531 318.8477 519.5312 420.4102 854.9805 645.5078 662.1094 516.6016 672.8516 542.9688 459.4727 487.3047 641.6016 567.3828 889.6484 519.043 487.3047 468.2617 306.6406 386.2305 306.6406 498.0469 498.0469 291.0156 479.0039 525.3906 422.8516 525.3906 497.5586 305.1758 470.7031 525.3906 229.4922 239.2578 454.5898 229.4922 798.8281 525.3906 527.3438 525.3906 525.3906 348.6328 391.1133 334.9609 525.3906 451.6602 714.8438 433.1055 452.6367 395.0195 314.4531 460.4492 314.4531 498.0469 506.8359 ]
 >>
 endobj
-27 0 obj
+30 0 obj
 <<
 /Ascent 750
 /CapHeight 641.6016
 /Descent -250
 /Flags 4
 /FontBBox [ -489.2578 -258.3008 1147.949 1014.648 ]
-/FontFile2 28 0 R
+/FontFile2 31 0 R
 /FontName /AAAAAA+Carlito-Regular
 /ItalicAngle 0
 /MissingWidth 506.8359
@@ -937,7 +1764,7 @@ endobj
 /Type /FontDescriptor
 >>
 endobj
-28 0 obj
+31 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length1 21000
@@ -1006,7 +1833,7 @@ mv¿≥›Ä±3ÒnaÑ]–¬	–Ôá˜√–˜:∏kÇœm–oL(Gíˇièø˛ˆ/√ºWØ@ãmã∞N	+5=	_ê⁄$º›	oú∞≤√B˚1ª]
 ‹∑EË›p9!∏ò⁄.πÛíÇ‰ÍºŒ…∆’Ê]¢·µpm÷iD‡p'@,JÅH·êõ°æË‚ºBfˆ¬®ÑˆSÇTÑ(vBI§l+º_#t˛/{M!¸Ãü#ˇ´ üé/†◊zf0>ï˛¢îŒ®3É˘¶ÕOeÃÕNg∆?4N˛u÷‚ˇ"…P|”%ñî\PI‡√ Èå_ﬁ‹€tA%ìñÃHp”L>—3êIúòë–M3^r˜ë[‹îÜü/‡˘cÊŒVP˛?Æé˙D
 endstream
 endobj
-29 0 obj
+32 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length 683
@@ -1015,27 +1842,27 @@ stream
 xú}’›jQÜ·sØb[J—=Î/“§ÅÙá¶70—1‚(£‰Óª>?I6•t@◊;Ã|¿É5ΩπøΩ6«f˙c‹-˙c≥ﬁ´±?ÏN„≤o˚ßÕ0)m≥⁄,èóªÛ˜r€Ì'”|˘·ÂpÏ∑˜√z7ôœõÈœ|x8é/ÕªÎÛı·¶ü7«›«|pzÓ∆˜ìÈ˜q’èõ·È?GN˚˝søÌác3õ,Õ™_Áè}Ìˆﬂ∫mﬂLˇ˝ﬁ€©_/˚æiœ˜ÖËÂn’ˆ›≤ª·©üÃg≥E3èª≈§V=+Ìﬂy\/w„ÂÏ,ØEv…ngE—-[–Rù—™≠jØ:™æ™˙S’◊UÆ˙¶Í€™øT}˜÷•ÚóRu[uÂ/ïøT˛R˘KÂ/ïøT˛R˘KÂ/ïøT˛R˘KÂoÈoœMél˙sd”ﬂ‚øhÈoÒµÙÁ»¶?G6˝9≤ÈœëMél˙sd”ü#õ˛ŸÙÁ»¶?G6˝9&s°_‡˙~°_‡˙~°_‡˙~°_‡˙~°_‡˙~°_‡˙~°_‡˙~°_‡˙~•_·W˙~•_·W˙~•_·W˙~•_·W˙~•_·W˙~•_·W˙~•_·W˙~•_·W˙~£ﬂ‡7˙~£ﬂ‡7˙~£ﬂ‡7˙~£ﬂ‡7˙~£ﬂ‡7˙~£ﬂ‡7˙~£ﬂ‡7˙~£ﬂ‡7˙~ßﬂ·w˙~ßﬂ·w˙~ßﬂ·w˙~ßﬂ·w˙~ßﬂ·w˙~ßﬂ·w˙~ßﬂ·w˙~ßﬂ·w˙˛†?‡˙˛†?‡˙˛†?‡˙˛†?‡˙˛†?‡˙˛†?‡˙˛†?‡˙˛†?‡˙/‚≤	∞+∞ˆ^—Ú4éπ£ŒªÒºx∞r6Cˇ∫>˜ª=ﬁ¬Ás—§ó
 endstream
 endobj
-30 0 obj
+33 0 obj
 <<
 /BaseFont /AAAAAA+Carlito-Italic
 /FirstChar 0
-/FontDescriptor 31 0 R
+/FontDescriptor 34 0 R
 /LastChar 127
 /Name /F4+0
 /Subtype /TrueType
-/ToUnicode 33 0 R
+/ToUnicode 36 0 R
 /Type /Font
 /Widths [ 0 498.0469 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 226.0742 325.6836 400.8789 498.0469 506.8359 714.8438 682.1289 220.7031 303.2227 303.2227 498.0469 498.0469 249.5117 306.1523 252.4414 387.6953 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 506.8359 267.5781 267.5781 498.0469 498.0469 498.0469 463.3789 894.043 578.6133 543.9453 522.4609 615.2344 488.2812 459.4727 630.8594 623.0469 251.9531 318.8477 519.5312 420.4102 854.9805 644.5312 654.2969 516.6016 664.0625 542.9688 452.1484 487.3047 641.6016 567.3828 890.1367 519.043 487.3047 468.2617 306.6406 384.2773 306.6406 498.0469 498.0469 291.0156 514.1602 514.1602 416.0156 514.1602 477.5391 305.1758 514.1602 514.1602 229.4922 239.2578 454.5898 229.4922 791.0156 514.1602 513.1836 514.1602 514.1602 342.7734 389.1602 334.9609 514.1602 445.8008 714.8438 433.1055 447.2656 395.0195 314.4531 460.4492 314.4531 498.0469 506.8359 ]
 >>
 endobj
-31 0 obj
+34 0 obj
 <<
 /Ascent 750
 /CapHeight 641.6016
 /Descent -250
 /Flags 68
 /FontBBox [ -425.7812 -259.7656 1111.328 1014.648 ]
-/FontFile2 32 0 R
+/FontFile2 35 0 R
 /FontName /AAAAAA+Carlito-Italic
 /ItalicAngle -7
 /MissingWidth 506.8359
@@ -1043,7 +1870,7 @@ endobj
 /Type /FontDescriptor
 >>
 endobj
-32 0 obj
+35 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length1 21160
@@ -1107,7 +1934,7 @@ WΩà}P_âó—(5áÜ)m§-ÀO ¸&∏˛Æ\€‡™Ü´Æ=pΩ◊(\?†2—\«†èspmÄk7˝<˙TÏ≈2Ê¬ÚÃ `≤QÛ‘
 "3p\7!¥nº‡¥Ô`◊ˆ‹vUAxs}N»N…ƒı∆ΩB√}pm÷iT‡l`ú‰˛$Ö@^:ÖÚ†ã„3≤2Ω⁄Ô§![¿b;‹âtMA};Ù–ˆﬂlE4Z˛\˜ìﬂR¸Ï_ÎãË≠Æ˛åœƒæ.e3Êàcæ.NÛ;„∆zá#Óû$?Ìµ˙[I£qäØª(√"ˇEπ>tª»¯“ÍªÍ. %bˇÇ◊-d‚ìù˝Ò»…˛]∑‡!O/2à<‚∫¸Ωàóoâ3∑/∞Ç'ıˇ ¿L6
 endstream
 endobj
-33 0 obj
+36 0 obj
 <<
 /Filter [ /FlateDecode ]
 /Length 681
@@ -1118,108 +1945,58 @@ qî—‰Óª>?I6•tΩ„Ã∆<X”õÂÌrÿûöÈèqﬂ›˜ßf≥÷c‹?è]ﬂ<Ùè€aR⁄fΩÌNó´Ûg∑[&”<|ˇr<ıªÂ∞ŸOÊÛ
 Ïº◊=‘=ècÆ®Ûb</¨úÌ–øÓŒ√˛ÄSxˇ…Ó£
 endstream
 endobj
-34 0 obj
-<<
-/Type /Annot
-/Subtype /Link
-/Rect [ 466.397411 103.1898 505.04956 112.7848 ]
-/Border [ 0 0 0 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057BuildWithBharat\0554\0560\055Certificate\056pdf)
->>
-/P 4 0 R
->>
-endobj
-35 0 obj
-<<
-/Type /Annot
-/Subtype /Link
-/Rect [ 505.071625 92.38976 543.723773 101.98476 ]
-/Border [ 0 0 0 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057Vivekananda\055Hackathon\055Certificate\056pdf)
->>
-/P 4 0 R
->>
-endobj
-36 0 obj
-<<
-/Type /Annot
-/Subtype /Link
-/Rect [ 515.717231 81.58976 535.03227 91.18476 ]
-/Border [ 0 0 0 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057MedSure\055AI\055Presentation\056pdf)
->>
-/P 4 0 R
->>
-endobj
 37 0 obj
 <<
-/Type /Annot
-/Subtype /Link
-/Rect [ 438.232855 59.98976 476.885004 69.58476 ]
-/Border [ 0 0 0 ]
-/A <<
-/S /URI
-/Type /Action
-/URI (https\072\057\057portfolio\055manish\055chandra\055maityv\056vercel\056app\057docs\057CodeFarming\055Certificate\056pdf)
->>
-/P 4 0 R
+/Producer (pypdf)
+/Title (Manish Chandra Maity \055 Resume)
 >>
 endobj
 xref
 0 38
 0000000000 65535 f 
 0000000015 00000 n 
-0000000096 00000 n 
-0000000155 00000 n 
-0000000204 00000 n 
-0000000587 00000 n 
-0000000778 00000 n 
-0000001011 00000 n 
-0000001209 00000 n 
-0000001434 00000 n 
-0000001684 00000 n 
-0000001941 00000 n 
-0000002153 00000 n 
-0000002377 00000 n 
-0000002588 00000 n 
-0000002798 00000 n 
-0000018834 00000 n 
-0000018942 00000 n 
-0000019050 00000 n 
-0000020152 00000 n 
-0000020406 00000 n 
-0000034530 00000 n 
-0000035288 00000 n 
-0000036393 00000 n 
-0000036644 00000 n 
-0000050356 00000 n 
-0000051108 00000 n 
-0000052227 00000 n 
-0000052478 00000 n 
-0000066246 00000 n 
-0000067006 00000 n 
-0000068117 00000 n 
-0000068369 00000 n 
-0000082532 00000 n 
-0000083290 00000 n 
-0000083588 00000 n 
-0000083887 00000 n 
-0000084174 00000 n 
+0000000064 00000 n 
+0000000123 00000 n 
+0000000505 00000 n 
+0000000696 00000 n 
+0000000929 00000 n 
+0000001127 00000 n 
+0000001352 00000 n 
+0000001602 00000 n 
+0000001858 00000 n 
+0000002070 00000 n 
+0000002294 00000 n 
+0000002505 00000 n 
+0000002715 00000 n 
+0000003013 00000 n 
+0000003312 00000 n 
+0000003599 00000 n 
+0000003884 00000 n 
+0000020859 00000 n 
+0000020967 00000 n 
+0000021075 00000 n 
+0000022177 00000 n 
+0000022431 00000 n 
+0000036555 00000 n 
+0000037313 00000 n 
+0000038418 00000 n 
+0000038669 00000 n 
+0000052381 00000 n 
+0000053133 00000 n 
+0000054252 00000 n 
+0000054503 00000 n 
+0000068271 00000 n 
+0000069031 00000 n 
+0000070142 00000 n 
+0000070394 00000 n 
+0000084557 00000 n 
+0000085315 00000 n 
 trailer
 <<
 /Size 38
-/Root 3 0 R
-/Info 1 0 R
+/Root 1 0 R
+/Info 37 0 R
 >>
 startxref
-84459
+85397
 %%EOF
