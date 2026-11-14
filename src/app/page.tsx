@@ -5,12 +5,16 @@ import React, { useEffect, useRef, useState } from 'react';
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCvOpen, setIsCvOpen] = useState(false);
-  const [isCvPrinting, setIsCvPrinting] = useState(false);
+  const [, setIsCvPrinting] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('');
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [isTabPeeking, setIsTabPeeking] = useState<boolean>(false);
 
   const cvCloseRef = useRef<HTMLButtonElement | null>(null);
   const cvTabRef = useRef<HTMLButtonElement | null>(null);
   const downloadTimerRef = useRef<NodeJS.Timeout | null>(null);
   const printResetTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const tabPeekingDoneRef = useRef<boolean>(false);
 
   // Background pointer glow tracking
   useEffect(() => {
@@ -66,6 +70,110 @@ export default function Home() {
     };
   }, []);
 
+  // Scroll animations: Progress bar, Navbar scroll state, Parallax, Active section, Tab peek
+  useEffect(() => {
+    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const progressEl = document.getElementById('scrollProgress');
+    const mockEl = document.querySelector<HTMLElement>('.art .mock');
+    const phEl = document.querySelector<HTMLElement>('.art .ph');
+    const sections = ['work', 'experience', 'skills', 'hackathons', 'contact'];
+
+    let ticking = false;
+
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+          const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+          // 1. Top progress bar scale
+          if (progressEl && maxScroll > 0) {
+            const ratio = Math.min(1, Math.max(0, scrollY / maxScroll));
+            progressEl.style.transform = `scaleX(${ratio})`;
+          }
+
+          // 2. Sticky header background & shadow state
+          setIsScrolled(scrollY > 40);
+
+          // 3. Tab peek trigger once user scrolls past hero
+          if (scrollY > 340 && !tabPeekingDoneRef.current && !calm) {
+            tabPeekingDoneRef.current = true;
+            setIsTabPeeking(true);
+            setTimeout(() => setIsTabPeeking(false), 1300);
+          }
+
+          // 4. Hero 3D Mockup Parallax depth
+          if (!calm && scrollY < 900) {
+            if (mockEl) {
+              mockEl.style.setProperty('--mock-ty', `${scrollY * 0.08}px`);
+            }
+            if (phEl) {
+              phEl.style.setProperty('--ph-ty', `${scrollY * -0.05}px`);
+            }
+          }
+
+          // 5. Active section indicator in nav
+          const viewportMid = scrollY + window.innerHeight * 0.35;
+          let current = '';
+          for (const id of sections) {
+            const el = document.getElementById(id);
+            if (el) {
+              const top = el.offsetTop;
+              const height = el.offsetHeight;
+              if (viewportMid >= top && viewportMid < top + height) {
+                current = id;
+                break;
+              }
+            }
+          }
+          setActiveSection(current);
+
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
+  // IntersectionObserver for Scroll Reveal on sections, cards, and timelines
+  useEffect(() => {
+    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const elements = document.querySelectorAll<HTMLElement>('.reveal-item, .tl li');
+
+    if (calm) {
+      elements.forEach((el) => el.classList.add('revealed'));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px',
+      }
+    );
+
+    elements.forEach((el) => io.observe(el));
+
+    return () => {
+      io.disconnect();
+    };
+  }, []);
+
   // Resume printer interaction functions
   const openCv = () => {
     if (downloadTimerRef.current) clearTimeout(downloadTimerRef.current);
@@ -75,7 +183,6 @@ export default function Home() {
     document.body.classList.add('cv-open');
     setIsCvOpen(true);
 
-    // Force reflow and add cv-print
     requestAnimationFrame(() => {
       document.body.classList.add('cv-print');
       setIsCvPrinting(true);
@@ -126,6 +233,9 @@ export default function Home() {
 
   return (
     <>
+      {/* Scroll Progress Bar at the top of the viewport */}
+      <div id="scrollProgress" className="scroll-progress" aria-hidden="true" />
+
       {/* Background with animated blobs, noise, and radial spot */}
       <div className="bg" aria-hidden="true">
         <i className="b1"></i>
@@ -138,7 +248,7 @@ export default function Home() {
 
       <div className="wrap">
         {/* Navigation Bar */}
-        <div className={`bar ${isMenuOpen ? 'open' : ''}`}>
+        <div className={`bar ${isMenuOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
           <a className="logo" href="#" aria-label="Manish Chandra Maity, back to top">
             <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <defs>
@@ -190,19 +300,39 @@ export default function Home() {
           </button>
 
           <nav id="menu" aria-label="Sections">
-            <a href="#work" onClick={() => setIsMenuOpen(false)}>
+            <a
+              href="#work"
+              className={activeSection === 'work' ? 'active' : ''}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Work
             </a>
-            <a href="#experience" onClick={() => setIsMenuOpen(false)}>
+            <a
+              href="#experience"
+              className={activeSection === 'experience' ? 'active' : ''}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Experience
             </a>
-            <a href="#skills" onClick={() => setIsMenuOpen(false)}>
+            <a
+              href="#skills"
+              className={activeSection === 'skills' ? 'active' : ''}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Skills
             </a>
-            <a href="#hackathons" onClick={() => setIsMenuOpen(false)}>
+            <a
+              href="#hackathons"
+              className={activeSection === 'hackathons' ? 'active' : ''}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Hackathons
             </a>
-            <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+            <a
+              href="#contact"
+              className={activeSection === 'contact' ? 'active' : ''}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Contact
             </a>
           </nav>
@@ -343,25 +473,25 @@ export default function Home() {
 
         {/* Stats Section */}
         <div className="stats">
-          <div className="stat">
+          <div className="stat reveal-item stagger-1">
             <b data-n="1500" data-s="+">
               1,500+
             </b>
             <span>service visits logged in the CRM I built for a client</span>
           </div>
-          <div className="stat">
+          <div className="stat reveal-item stagger-2">
             <b data-n="100" data-s="K+">
               100K+
             </b>
             <span>downloads of the Play Store app I helped restore</span>
           </div>
-          <div className="stat">
+          <div className="stat reveal-item stagger-3">
             <b data-n="90" data-s="+">
               90+
             </b>
             <span>sample-paper PDFs managed in the admin app I built</span>
           </div>
-          <div className="stat">
+          <div className="stat reveal-item stagger-4">
             <b data-n="60" data-s="+">
               60+
             </b>
@@ -371,8 +501,8 @@ export default function Home() {
 
         {/* About Me Section */}
         <section className="about" id="about">
-          <h2>About me</h2>
-          <p>
+          <h2 className="reveal-item">About me</h2>
+          <p className="reveal-item stagger-1">
             I’m a B.Tech CSE (AI) student at KCC Institute of Technology &amp; Management in Delhi
             NCR. I build Flutter apps with BLoC and clean architecture. So far I’ve shipped screens
             and an admin app for a live exam-prep app, restored another live app on a current
@@ -382,9 +512,9 @@ export default function Home() {
 
         {/* Work Section */}
         <section id="work">
-          <h2>Work</h2>
+          <h2 className="reveal-item">Work</h2>
 
-          <article className="feature">
+          <article className="feature reveal-item stagger-1">
             <h3>Dashmesh Mechanix CRM</h3>
             <div>Flutter CRM for a service business. Used live by the client.</div>
             <ul className="pts">
@@ -424,7 +554,7 @@ export default function Home() {
           </article>
 
           <div className="grid">
-            <div className="card">
+            <div className="card reveal-item stagger-1">
               <h3>StuckNot Admin App</h3>
               <p>
                 A standalone Flutter admin app I built alone, for managing 90+ sample-paper PDFs by
@@ -434,7 +564,7 @@ export default function Home() {
                 <li>Flutter</li>
               </ul>
             </div>
-            <div className="card">
+            <div className="card reveal-item stagger-2">
               <h3>QueuelessBharat</h3>
               <p>
                 Web platform where emergency patients find nearby hospitals with free beds, check
@@ -453,7 +583,7 @@ export default function Home() {
                 Team repo
               </a>
             </div>
-            <div className="card">
+            <div className="card reveal-item stagger-3">
               <h3>Baani.Net restoration</h3>
               <p>
                 Helped restore a live Google Play app with 100K+ downloads. I upgraded it from a
@@ -465,7 +595,7 @@ export default function Home() {
                 <li>Gradle</li>
               </ul>
             </div>
-            <div className="card">
+            <div className="card reveal-item stagger-4">
               <h3>To-do app</h3>
               <p>Flutter mobile app with a self-written Python FastAPI REST API (CRUD).</p>
               <ul className="tags">
@@ -480,7 +610,7 @@ export default function Home() {
                 View the repo
               </a>
             </div>
-            <div className="card">
+            <div className="card reveal-item stagger-5">
               <h3>Telegram AI bot</h3>
               <p>
                 Async Python bot built with aiogram that answers messages using an LLM through the
@@ -499,7 +629,7 @@ export default function Home() {
                 View the repo
               </a>
             </div>
-            <div className="card">
+            <div className="card reveal-item stagger-6">
               <h3>User Details API</h3>
               <p>
                 RESTful FastAPI service with POST, GET, PUT and DELETE endpoints, Pydantic models
@@ -515,9 +645,9 @@ export default function Home() {
 
         {/* Experience Section */}
         <section id="experience">
-          <h2>Experience</h2>
+          <h2 className="reveal-item">Experience</h2>
           <ol className="tl">
-            <li>
+            <li className="reveal-item stagger-1">
               <h3>StuckNot</h3>
               <div className="when">
                 Flutter Developer Intern, Dec 2024 to Feb 2025. Engineer Intern, May to Jul 2025.
@@ -532,7 +662,7 @@ export default function Home() {
                 user’s logo, colors, fonts and images.
               </p>
             </li>
-            <li>
+            <li className="reveal-item stagger-2">
               <h3>QA on CampusMaster, a 12-module college ERP</h3>
               <div className="when">Deployed at Maples College</div>
               <p>
@@ -541,7 +671,7 @@ export default function Home() {
                 resolved with the senior full-stack developer.
               </p>
             </li>
-            <li>
+            <li className="reveal-item stagger-3">
               <h3>KCC Institute of Technology &amp; Management</h3>
               <div className="when">
                 B.Tech, Computer Science &amp; Engineering (AI), 2024 to 2028
@@ -552,26 +682,26 @@ export default function Home() {
 
         {/* Skills Section */}
         <section id="skills">
-          <h2>Skills</h2>
+          <h2 className="reveal-item">Skills</h2>
           <div className="skills">
-            <div>
+            <div className="reveal-item stagger-1">
               <h3>Languages</h3>
               <p>Dart, Python, Java, C, SQL</p>
             </div>
-            <div>
+            <div className="reveal-item stagger-2">
               <h3>Flutter</h3>
               <p>
                 BLoC, Clean Architecture, SOLID, Freezed and JSON serialization, very_good_cli,
                 package-based structure
               </p>
             </div>
-            <div>
+            <div className="reveal-item stagger-3">
               <h3>Backend and testing</h3>
               <p>
                 Firebase, Supabase, REST APIs, FastAPI, aiogram, manual QA and defect reporting
               </p>
             </div>
-            <div>
+            <div className="reveal-item stagger-4">
               <h3>Web and tools</h3>
               <p>
                 Familiar with React and Next.js. Git/GitHub, Vercel, FileZilla, prompt engineering
@@ -583,25 +713,25 @@ export default function Home() {
 
         {/* Hackathons Section */}
         <section id="hackathons">
-          <h2>Hackathons</h2>
+          <h2 className="reveal-item">Hackathons</h2>
           <ul className="hack">
-            <li>
+            <li className="reveal-item stagger-1">
               <strong>Build With Bharat 4.0</strong> (national level, CodeVerse x KCC): PPT round
               with team The Malwares, for QueuelessBharat.
             </li>
-            <li>
+            <li className="reveal-item stagger-2">
               <strong>Vivekananda Innovation Hackathon 2026</strong> (DTU and Vivekananda Institute of
               Values, 27 Sep 2026): online screening round.
             </li>
-            <li>
+            <li className="reveal-item stagger-3">
               <strong>EY Techathon 6.0:</strong> frontend developer on team Bug Hunters, for MedSure
               AI, an agentic-AI concept for healthcare provider data.
             </li>
-            <li>
+            <li className="reveal-item stagger-4">
               <strong>Smart India Hackathon 2025 and 2026:</strong> participated with problem
               statements SIH25032 and SIH26184.
             </li>
-            <li>
+            <li className="reveal-item stagger-5">
               <strong>Code Farming</strong> (24-hour code-a-thon on HackerRank, Voyager Coding Club,
               29–30 Apr 2026): participant.
             </li>
@@ -610,11 +740,11 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact">
-          <h2>Let’s talk</h2>
-          <p className="contact">
+          <h2 className="reveal-item">Let’s talk</h2>
+          <p className="contact reveal-item stagger-1">
             <a href="mailto:manishmaity39@gmail.com">manishmaity39@gmail.com</a>
           </p>
-          <div className="btns" style={{ marginTop: 18 }}>
+          <div className="btns reveal-item stagger-2" style={{ marginTop: 18 }}>
             <a
               className="btn"
               href="https://www.linkedin.com/in/manish-chandra-maity-106a02321"
@@ -641,7 +771,7 @@ export default function Home() {
       {/* Floating Resume Tab Button */}
       <button
         ref={cvTabRef}
-        className="cv-tab"
+        className={`cv-tab ${isTabPeeking ? 'tab-peek' : ''}`}
         id="cvTab"
         type="button"
         aria-haspopup="dialog"

@@ -1143,9 +1143,130 @@ body.cv-print .cv-msg {
   }
 }
 
+/* ==========================================================================
+   Scroll Animations & Interactions
+   ========================================================================== */
+
+/* Top Viewport Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #D7142F 0%, #FF6A6F 45%, #FF9CA6 80%, #FFFFFF 100%);
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(255, 106, 111, 0.6);
+  will-change: transform;
+}
+
+/* Sticky Navbar Scroll State */
+.bar {
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.bar.scrolled {
+  background: rgba(22, 6, 11, 0.88);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  backdrop-filter: blur(20px) saturate(1.5);
+  border-color: rgba(255, 156, 166, 0.28);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Active Section Nav Link Highlight */
+.bar nav a.active {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--sun);
+  font-weight: 600;
+}
+
+/* Scroll Reveal Base */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays for Grid Cards & Lists */
+.stagger-1 { transition-delay: 0.06s; }
+.stagger-2 { transition-delay: 0.12s; }
+.stagger-3 { transition-delay: 0.18s; }
+.stagger-4 { transition-delay: 0.24s; }
+.stagger-5 { transition-delay: 0.30s; }
+.stagger-6 { transition-delay: 0.36s; }
+
+/* Timeline Smooth Cascading Entrance */
+.tl li {
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tl li.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tl li::before {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.tl li.revealed::before {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px var(--sun), 0 0 12px rgba(255, 156, 166, 0.6);
+}
+
+/* Hero 3D Mockup Parallax Support */
+.mock {
+  transform: perspective(1800px) rotateY(-7deg) rotateX(2deg) translateY(var(--mock-ty, 0px));
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.ph {
+  transform: translateY(var(--ph-ty, 0px));
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* Resume Tab Attention Bounce upon scroll */
+@keyframes tabBounce {
+  0% { transform: translateX(14px) rotate(-5deg); }
+  30% { transform: translateX(0) rotate(-2deg); }
+  60% { transform: translateX(4px) rotate(-4deg); }
+  100% { transform: translateX(14px) rotate(-5deg); }
+}
+
+.cv-tab.tab-peek {
+  animation: tabBounce 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .scroll-progress {
+    display: none !important;
+  }
+  .reveal-item, .tl li {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .mock, .ph {
+    transform: perspective(1800px) rotateY(-7deg) rotateX(2deg) !important;
+  }
+  .cv-tab.tab-peek {
+    animation: none !important;
   }
   .hero *, .art, .art *, .logo *, .bg i {
     animation: none !important;
