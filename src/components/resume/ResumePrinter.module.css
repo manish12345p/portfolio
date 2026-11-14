@@ -1,0 +1,474 @@
+/* Resume Printer Styles */
+
+.root {
+  position: relative;
+  z-index: 50;
+}
+
+/* 1. Floating Paper Resume Tab */
+.floatingTab {
+  position: fixed;
+  right: -24px;
+  top: 48%;
+  transform: translateY(-50%) rotate(-4deg);
+  width: 84px;
+  height: 88px;
+  background-color: #fffdfb;
+  border: 1px solid #f0dcd4;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -4px 6px 20px rgba(74, 13, 26, 0.12), -1px 2px 6px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding-right: 14px;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.floatingTab:hover,
+.floatingTab:focus-visible {
+  transform: translateY(-50%) translateX(-22px) rotate(0deg);
+  box-shadow: -6px 8px 24px rgba(200, 16, 46, 0.2), -1px 2px 8px rgba(0, 0, 0, 0.06);
+  outline: none;
+}
+
+.tabMark {
+  color: #f26a1b;
+  font-size: 14px;
+  line-height: 1;
+  filter: drop-shadow(0 1px 2px rgba(242, 106, 27, 0.3));
+}
+
+.tabLabel {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: #2a0f14;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* 2. Backdrop Overlay */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 15, 20, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 60;
+  animation: fadeIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 3. Slide-in Side Panel */
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 520px;
+  background-color: #fdf1ec;
+  box-shadow: -10px 0 40px rgba(42, 15, 20, 0.25);
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: slideInRight 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  overflow: hidden;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Panel Header & Close Button */
+.panelHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 20px;
+}
+
+.closeButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2a0f14;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.closeButton:hover,
+.closeButton:focus-visible {
+  transform: scale(1.1);
+  background-color: #c8102e;
+  outline: none;
+}
+
+.frameDivider {
+  height: 1px;
+  background-color: #f0dcd4;
+  width: 100%;
+}
+
+/* 4. Printing Stage */
+.stage {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  overflow: hidden;
+}
+
+/* Metallic Chrome Printer Unit */
+.printerUnit {
+  position: relative;
+  z-index: 20;
+  width: 90%;
+  max-width: 400px;
+  height: 38px;
+  background: linear-gradient(180deg, #f5f5f7 0%, #d8d8de 40%, #b8b8c2 70%, #90909c 100%);
+  border: 1px solid #7c7c88;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), inset 0 1px 1px #ffffff, inset 0 -2px 3px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+
+/* Printer Vibration Animation */
+.printerVibrating {
+  animation: printerShake 0.08s infinite alternate ease-in-out;
+}
+
+@keyframes printerShake {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1.5px);
+  }
+}
+
+.printerDotLeft {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 10%, #ff9933 60%, #c8102e 100%);
+  box-shadow: 0 0 6px rgba(255, 153, 51, 0.8);
+}
+
+.printerGroove {
+  height: 3px;
+  flex: 1;
+  margin: 0 16px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border-radius: 2px;
+}
+
+.printerLedRight {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #888892;
+  transition: background-color 0.3s ease;
+}
+
+.printerLedBlinking {
+  background-color: #f26a1b;
+  box-shadow: 0 0 8px #f26a1b;
+  animation: ledPulse 0.4s infinite alternate;
+}
+
+.printerLedSolidSuccess {
+  background-color: #38a169;
+  box-shadow: 0 0 8px #38a169;
+}
+
+@keyframes ledPulse {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Underside Slot */
+.printerSlot {
+  position: absolute;
+  bottom: -4px;
+  left: 5%;
+  right: 5%;
+  height: 5px;
+  background-color: #121216;
+  border-radius: 0 0 3px 3px;
+  box-shadow: inset 0 2px 3px #000000;
+  z-index: 10;
+}
+
+/* Paper Chute (Clipping Container) */
+.paperChute {
+  position: relative;
+  width: 90%;
+  max-width: 380px;
+  height: 480px;
+  overflow: hidden;
+  z-index: 5;
+  margin-top: -3px;
+}
+
+/* Paper Sheet Preview */
+.paperSheet {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e8dcd5;
+  border-radius: 2px 2px 8px 8px;
+  box-shadow: 0 12px 30px rgba(42, 15, 20, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 18px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 460px;
+  position: relative;
+  transform-origin: top center;
+}
+
+/* Stepped Printing Animation */
+.paperHidden {
+  transform: translateY(-105%);
+}
+
+.paperPrinting {
+  animation: feedPaper 2.6s steps(26, end) forwards;
+}
+
+.paperSettled {
+  transform: translateY(0) rotate(-1.2deg);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes feedPaper {
+  0% {
+    transform: translateY(-105%);
+  }
+  92% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-1.2deg);
+  }
+}
+
+/* Curled Corner on Bottom Right of Paper */
+.curledCorner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, transparent 50%, #f0dcd4 50%, #ffffff 75%);
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+/* Paper Header */
+.paperHeader {
+  border-bottom: 1.5px solid #2a0f14;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.paperName {
+  font-family: var(--font-serif, 'Cormorant Garamond', Georgia, serif);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #c8102e;
+  line-height: 1.1;
+}
+
+.paperRole {
+  font-size: 11px;
+  font-weight: 600;
+  color: #2a0f14;
+  margin-top: 2px;
+}
+
+.paperContact {
+  font-size: 9.5px;
+  color: #6e5a5d;
+  margin-top: 2px;
+}
+
+/* Paper 3 Project Blocks */
+.paperProjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.projectThumb {
+  border-radius: 6px;
+  padding: 8px 6px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 52px;
+}
+
+.thumbRed {
+  background: linear-gradient(135deg, #c8102e 0%, #7a1428 100%);
+}
+
+.thumbOrange {
+  background: linear-gradient(135deg, #ff9933 0%, #f26a1b 100%);
+}
+
+.thumbBurgundy {
+  background: linear-gradient(135deg, #7a1428 0%, #4a0d1a 100%);
+}
+
+.thumbTitle {
+  font-size: 9.5px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.thumbTag {
+  font-size: 8px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Paper Details Columns */
+.paperColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 9px;
+  color: #6e5a5d;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.columnHeading {
+  font-weight: 700;
+  color: #2a0f14;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #f0dcd4;
+  padding-bottom: 2px;
+}
+
+/* Dark Maroon Footer Strip */
+.paperFooterStrip {
+  background-color: #4a0d1a;
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.trailerLine {
+  font-size: 9px;
+  font-weight: 600;
+  color: #ff9933;
+}
+
+.filmLine {
+  font-size: 9px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* 5. Status Bar at Bottom */
+.statusContainer {
+  padding: 16px 24px;
+  background-color: #fffdfb;
+  border-top: 2px solid #c8102e;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statusVisible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.statusText {
+  font-size: 13px;
+  color: #2a0f14;
+  font-weight: 500;
+}
+
+.statusTextLink {
+  font-size: 13px;
+  font-weight: 700;
+  color: #c8102e;
+  text-decoration: underline;
+  text-decoration-color: #ff9933;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: color 0.2s ease;
+}
+
+.statusTextLink:hover {
+  color: #7a1428;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .printerVibrating {
+    animation: none;
+  }
+  .paperPrinting {
+    animation: none;
+    transform: translateY(0) rotate(-1.2deg);
+  }
+  .panel {
+    animation: none;
+  }
+  .backdrop {
+    animation: none;
+  }
+}
+

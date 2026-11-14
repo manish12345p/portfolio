@@ -1,0 +1,826 @@
+﻿<!doctype html>
+<html lang="en" class="is-booting">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        background-color: #1e1e1e;
+      }
+
+      [data-barba='container'].is-transitioning {
+        background-color: #1e1e1e;
+      }
+    </style>
+
+    <title>Douglus Nguyen — Web Designer from Vietnam</title>
+
+    <link rel="canonical" href="https://douglus.co/" />
+
+    <meta
+      name="description"
+      content="Independent web designer based in Vietnam, focused on website design, interaction design, and front-end development."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Douglus Nguyen — Web Designer from Vietnam" />
+    <meta
+      name="twitter:description"
+      content="Web designer based in Vietnam. Focused on Website and Interaction design."
+    />
+    <meta name="twitter:image" content="https://douglus.co/images/image-sharing.jpg" />
+    <meta name="twitter:image:alt" content="Douglus Nguyen — Web Designer from Vietnam" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://douglus.co/" />
+    <meta property="og:site_name" content="Douglus Nguyen" />
+    <meta property="og:title" content="Douglus Nguyen — Web Designer from Vietnam" />
+    <meta
+      property="og:description"
+      content="Independent web designer based in Vietnam, focused on website design, interaction design, and front-end development."
+    />
+    <meta property="og:image" content="https://douglus.co/images/image-sharing.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Douglus Nguyen — Web Designer from Vietnam" />
+
+    <meta name="theme-color" content="#fefff8" />
+    <meta name="apple-mobile-web-app-title" content="Douglus Nguyen — Web Designer from Vietnam" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-TileColor" content="#fefff8" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://douglus.co/#person",
+            "name": "Douglus Nguyen",
+            "alternateName": ["Nguyễn Phi Long", "Nguyen Phi Long"],
+            "url": "https://douglus.co/",
+            "jobTitle": "Web Designer & Front-end Developer",
+            "description": "Independent web designer based in Vietnam, focused on website design, interaction design, and front-end development.",
+            "email": "mailto:hello@douglus.co",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ho Chi Minh City",
+              "addressCountry": "VN"
+            },
+            "knowsAbout": ["Web design", "Interaction design", "Front-end development", "WebGL"],
+            "award": "Awwwards Honorable Mention (2026)",
+            "sameAs": [
+              "https://www.awwwards.com/long-nguyen-phi/",
+              "https://www.linkedin.com/in/nguyen-phi-long-a48961265/",
+              "https://github.com/19521791",
+              "https://douglus.site"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://douglus.co/#website",
+            "url": "https://douglus.co/",
+            "name": "Douglus",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://douglus.co/#person" }
+          }
+        ]
+      }
+    </script>
+
+    <link
+      rel="preload"
+      href="/fonts/NeueMontreal-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/roxborough-cf-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script type="module" crossorigin src="/assets/js-DcEzkRmQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/js-DI8Gritf.css">
+  </head>
+
+  <body data-barba="wrapper">
+    <div class="preloader" data-preloader aria-hidden="true">
+      <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+        <symbol id="pl-silhouette" viewBox="0 0 656 983">
+          <path
+            fill="#010007"
+            d="M332.805 120.571C330.691 121.019 327.552 121.851 325.758 122.363C324.028 122.939 320.569 123.899 318.07 124.475C312.048 125.819 309.23 127.291 303.912 131.707C301.478 133.755 297.827 136.378 295.712 137.594C291.805 139.962 287.512 144.25 285.975 147.514L285.014 149.434L286.488 147.514C288.281 145.082 291.036 142.458 293.662 140.666C294.944 139.77 294.175 140.858 291.548 143.674C287.256 148.41 285.078 152.378 281.939 161.529C279.889 167.353 279.377 174.009 280.594 177.913C280.85 178.809 280.914 177.593 280.722 174.969C280.53 171.641 280.722 169.529 281.555 166.969C282.772 163.193 284.245 160.953 283.348 164.153C282.58 167.033 282.836 177.657 283.797 182.073C285.142 188.536 287.641 195.128 291.869 203.512C298.916 217.527 302.439 230.007 301.35 237.174L300.966 239.99L294.88 239.926C290.459 239.862 288.537 240.118 287.961 240.694C287.577 241.206 286.808 245.174 286.423 249.59C285.334 260.533 282.772 272.757 280.53 277.877C279.505 280.181 278.672 282.805 278.672 283.636C278.672 285.876 273.227 292.34 258.3 307.827C250.997 315.443 243.438 323.507 241.452 325.747C236.262 331.698 228.767 341.682 227.294 344.498C223.386 352.178 214.673 394.928 204.68 455.341C202.053 471.533 196.928 502.06 193.405 523.179C189.881 544.298 185.973 567.785 184.756 575.337C174.827 636.838 169.381 672.613 166.242 697.572C164.128 714.211 156.633 786.656 153.75 817.887C150.867 849.821 149.906 861.405 149.906 864.157C149.906 866.845 150.034 867.101 152.02 867.741C154.455 868.573 174.698 874.268 187.511 877.788C197.505 880.476 197.312 880.348 197.312 885.98C197.312 888.668 197.825 889.244 200.836 890.46C204.359 891.868 231.778 899.291 241.003 901.339C251.702 903.771 250.677 902.811 250.228 909.979C250.036 913.371 248.947 929.37 247.922 945.562C246.897 961.753 245.872 976.792 245.68 979.032L245.295 983H348.116H450.936L451.256 979.608C452.73 965.657 454.267 909.915 454.331 871.325C454.331 829.47 452.666 789.344 449.719 760.609C449.398 757.473 449.206 754.849 449.27 754.849C451.384 753.697 465.862 743.906 470.347 740.578C480.789 732.898 497.125 718.115 497.125 716.387C497.125 716.003 494.434 706.915 491.103 696.228C475.152 644.71 463.812 602.855 456.509 568.937C455.292 563.113 453.05 553.193 451.641 546.858C450.231 540.522 447.156 526.699 444.85 516.139C442.544 505.579 439.853 494.06 438.828 490.54C433.575 472.557 423.966 447.534 396.227 379.825C392.639 370.993 387.642 358.769 385.144 352.626C382.645 346.482 378.161 335.538 375.086 328.307L369.512 315.187L370.153 306.867C370.73 299.764 371.178 297.46 373.42 291.252C375.406 285.556 375.855 283.7 375.278 282.996C374.83 282.549 371.883 279.925 368.744 277.237C365.541 274.613 362.914 272.245 362.914 272.053C362.914 271.605 366.117 265.909 368.487 262.005C370.153 259.381 370.409 259.189 373.036 259.189C374.509 259.189 378.353 259.957 381.492 260.853C390.461 263.541 398.405 262.965 399.494 259.637C399.686 258.933 399.686 255.798 399.43 252.662L398.981 246.966L401.223 244.918C402.825 243.382 403.53 242.166 403.786 240.182C403.978 238.71 404.683 236.726 405.452 235.766C406.284 234.742 406.797 233.143 406.797 231.607C406.797 228.087 407.694 226.231 410.192 224.759C411.473 224.055 412.947 222.711 413.587 221.815C414.612 220.151 414.612 220.023 409.744 210.551C404.427 200.12 403.914 197.688 406.156 194.552C408.911 190.712 409.295 188.92 408.27 184.696C407.758 182.521 406.541 176.313 405.516 170.873C404.491 165.433 403.466 160.441 403.209 159.802C402.889 158.906 403.402 158.138 405.003 156.794C409.552 153.018 410.577 147.386 407.758 141.626C406.541 139.258 404.747 137.338 400.839 134.267C394.753 129.467 391.166 127.995 385.144 127.995C382.197 127.995 379.955 127.547 377.969 126.651C372.652 124.219 370.025 123.387 365.477 122.875C363.042 122.555 359.006 121.915 356.508 121.339C350.166 119.931 337.545 119.547 332.805 120.571ZM372.139 125.819C373.997 126.331 375.406 126.907 375.214 127.099C375.086 127.291 372.972 126.843 370.537 126.139C368.103 125.435 366.694 124.859 367.462 124.859C368.167 124.795 370.281 125.243 372.139 125.819ZM315.188 127.995C313.458 128.955 307.5 131.195 307.5 130.811C307.5 130.299 314.098 127.355 315.188 127.355C316.02 127.419 316.02 127.483 315.188 127.995ZM394.753 131.579C395.714 132.091 396.675 132.795 396.931 133.179C397.252 133.691 397.123 133.755 396.547 133.435C396.098 133.179 393.792 132.219 391.486 131.387C387.514 129.979 387.45 129.915 390.141 130.299C391.742 130.555 393.792 131.131 394.753 131.579ZM404.17 145.274C404.106 147.578 404.042 147.834 403.658 146.554C403.402 145.658 402.953 143.674 402.761 142.074C402.312 139.322 402.377 139.258 403.273 140.794C403.786 141.69 404.17 143.674 404.17 145.274ZM407.502 150.458C407.117 151.738 406.284 153.21 405.708 153.658C404.747 154.49 404.747 154.426 405.708 152.57C406.284 151.418 406.989 149.306 407.245 147.77C407.63 145.658 407.758 145.338 407.95 146.554C408.078 147.386 407.886 149.178 407.502 150.458ZM403.402 149.882C403.209 150.394 403.017 150.202 403.017 149.498C402.953 148.794 403.145 148.41 403.337 148.666C403.53 148.858 403.594 149.434 403.402 149.882Z"
+          />
+        </symbol>
+      </svg>
+
+      <div class="preloader__artwork">
+        <div class="preloader__subject">
+          <div class="preloader__fragment" data-fragment="1">
+            <svg viewBox="0 0 656 983" aria-hidden="true" focusable="false">
+              <use href="#pl-silhouette" />
+            </svg>
+          </div>
+          <div class="preloader__fragment" data-fragment="2">
+            <svg viewBox="0 0 656 983" aria-hidden="true" focusable="false">
+              <use href="#pl-silhouette" />
+            </svg>
+          </div>
+          <div class="preloader__fragment" data-fragment="3">
+            <svg viewBox="0 0 656 983" aria-hidden="true" focusable="false">
+              <use href="#pl-silhouette" />
+            </svg>
+          </div>
+          <div class="preloader__fragment" data-fragment="4">
+            <svg viewBox="0 0 656 983" aria-hidden="true" focusable="false">
+              <use href="#pl-silhouette" />
+            </svg>
+          </div>
+          <div class="preloader__fragment" data-fragment="5">
+            <svg viewBox="0 0 656 983" aria-hidden="true" focusable="false">
+              <use href="#pl-silhouette" />
+            </svg>
+          </div>
+          <div class="preloader__fragment" data-fragment="6">
+            <svg viewBox="0 0 656 983" aria-hidden="true" focusable="false">
+              <use href="#pl-silhouette" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="preloader__content">
+        <div class="preloader__title">
+          <span class="preloader__title-mask">
+            <span class="preloader__title-line" data-preloader-title>
+              Hello, Welcome to my Portfolio
+            </span>
+          </span>
+        </div>
+
+        <div class="preloader__progress">
+          <div class="preloader__track">
+            <div class="preloader__bar" data-preloader-bar></div>
+          </div>
+          <span class="preloader__percent" data-preloader-percent>0%</span>
+        </div>
+      </div>
+
+      <div class="preloader__transition">
+        <div class="preloader__transition-band"></div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__availability">
+        <span>Open for collaborations</span>
+        <span>and new projects.</span>
+      </div>
+
+      <button
+        class="site-header__menu"
+        type="button"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="site-menu"
+        data-menu-open
+      >
+        <span class="site-header__menu-icon" aria-hidden="true">
+          <span class="site-header__menu-line site-header__menu-line--01">
+            <span class="site-header__menu-line-in site-header__menu-line-in--01"></span>
+          </span>
+
+          <span class="site-header__menu-line site-header__menu-line--02">
+            <span class="site-header__menu-line-in site-header__menu-line-in--02"></span>
+          </span>
+
+          <span class="site-header__menu-line site-header__menu-line--cross01">
+            <span class="site-header__menu-line-in site-header__menu-line-in--cross01"></span>
+          </span>
+
+          <span class="site-header__menu-line site-header__menu-line--cross02">
+            <span class="site-header__menu-line-in site-header__menu-line-in--cross02"></span>
+          </span>
+        </span>
+
+        <span class="site-header__menu-label">
+          <span class="site-header__menu-label-state site-header__menu-label-state--menu">
+            <span class="site-header__menu-label-track">
+              <span>Menu</span>
+              <span>Menu</span>
+            </span>
+          </span>
+
+          <span class="site-header__menu-label-state site-header__menu-label-state--close">
+            <span class="site-header__menu-label-track">
+              <span>Close</span>
+              <span>Close</span>
+            </span>
+          </span>
+        </span>
+      </button>
+
+      <p class="site-header__archive">Archive vol.2</p>
+    </header>
+
+    <div class="menu-overlay" id="site-menu" aria-hidden="true" data-menu>
+      <div class="menu-overlay__inner">
+        <div class="menu-overlay__stage" aria-hidden="true">
+          <div class="menu-overlay__preview" data-menu-preview>
+            <div class="menu-overlay__preview-item is-active" data-menu-preview-item="home">
+              <div class="menu-overlay__preview-media">
+                <span class="menu-overlay__preview-mask">
+                  <img
+                    class="menu-overlay__preview-image"
+                    width="1254"
+                    height="1254"
+                    src="/images/home-shape-v2.webp"
+                    alt=""
+                  />
+                </span>
+
+                <div class="menu-overlay__preview-words">
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Vision</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Start</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Everything</span></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-overlay__preview-item" data-menu-preview-item="work">
+              <div class="menu-overlay__preview-media">
+                <span class="menu-overlay__preview-mask">
+                  <img
+                    class="menu-overlay__preview-image"
+                    width="1254"
+                    height="1254"
+                    src="/images/work-shape.webp"
+                    alt=""
+                  />
+                </span>
+
+                <div class="menu-overlay__preview-words">
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Build</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Create</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Deliver</span></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-overlay__preview-item" data-menu-preview-item="lab">
+              <div class="menu-overlay__preview-media">
+                <span class="menu-overlay__preview-mask">
+                  <img
+                    class="menu-overlay__preview-image"
+                    width="1254"
+                    height="1254"
+                    src="/images/lab-shape.webp"
+                    alt=""
+                  />
+                </span>
+
+                <div class="menu-overlay__preview-words">
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Explore</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Make</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Play</span></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-overlay__preview-item" data-menu-preview-item="about">
+              <div class="menu-overlay__preview-media">
+                <span class="menu-overlay__preview-mask">
+                  <img
+                    class="menu-overlay__preview-image"
+                    width="1254"
+                    height="1254"
+                    src="/images/about-shape.webp"
+                    alt=""
+                  />
+                </span>
+
+                <div class="menu-overlay__preview-words">
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">People</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Story</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Values</span></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-overlay__preview-item" data-menu-preview-item="contact">
+              <div class="menu-overlay__preview-media">
+                <span class="menu-overlay__preview-mask">
+                  <img
+                    class="menu-overlay__preview-image"
+                    width="1254"
+                    height="1254"
+                    src="/images/contact-shape.webp"
+                    alt=""
+                  />
+                </span>
+
+                <div class="menu-overlay__preview-words">
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Connect</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Collab</span></span
+                  >
+                  <span class="menu-overlay__preview-word-mask"
+                    ><span class="menu-overlay__preview-word">Talk</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="menu-overlay__panel">
+          <nav class="menu-overlay__nav" aria-label="Main navigation">
+            <a
+              href="/"
+              class="menu-overlay__link is-active"
+              aria-current="page"
+              data-menu-item="home"
+              data-barba-link
+            >
+              <span class="menu-overlay__link-mask">
+                <span class="menu-overlay__link-text"><span class="font-rox">H</span>ome</span>
+              </span>
+              <span class="menu-overlay__indicator" aria-hidden="true"></span>
+            </a>
+
+            <a href="/work" class="menu-overlay__link" data-menu-item="work" data-barba-link>
+              <span class="menu-overlay__link-mask">
+                <span class="menu-overlay__link-text"><span class="font-rox">W</span>orks</span>
+              </span>
+              <span class="menu-overlay__indicator" aria-hidden="true"></span>
+            </a>
+
+            <a href="/playground" class="menu-overlay__link" data-menu-item="lab" data-barba-link>
+              <span class="menu-overlay__link-mask">
+                <span class="menu-overlay__link-text"
+                  ><span class="font-rox">P</span>layground</span
+                >
+              </span>
+              <span class="menu-overlay__indicator" aria-hidden="true"></span>
+            </a>
+
+            <a href="/about" class="menu-overlay__link" data-menu-item="about" data-barba-link>
+              <span class="menu-overlay__link-mask">
+                <span class="menu-overlay__link-text"><span class="font-rox">A</span>bout</span>
+              </span>
+              <span class="menu-overlay__indicator" aria-hidden="true"></span>
+            </a>
+
+            <a href="/contact" class="menu-overlay__link" data-menu-item="contact" data-barba-link>
+              <span class="menu-overlay__link-mask">
+                <span class="menu-overlay__link-text"><span class="font-rox">C</span>ontact</span>
+              </span>
+              <span class="menu-overlay__indicator" aria-hidden="true"></span>
+            </a>
+          </nav>
+
+          <div class="menu-overlay__panel-footer">
+            <div class="menu-overlay__contact">
+              <a href="mailto:hello@douglus.co">hello@douglus.co</a>
+              <a href="tel:+84393277584">+84 393 277 584</a>
+            </div>
+
+            <div class="menu-overlay__socials">
+              <a
+                href="https://www.linkedin.com/in/douglus-nguyen-a48961265"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+
+              <span class="menu-overlay__map" aria-hidden="true" data-menu-map>
+                <span class="menu-overlay__map-dot"></span>
+                <span class="menu-overlay__map-dot"></span>
+                <span class="menu-overlay__map-dot"></span>
+                <span class="menu-overlay__map-dot"></span>
+                <span class="menu-overlay__map-dot"></span>
+                <span class="menu-overlay__map-active" data-menu-map-active></span>
+              </span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="page-flip">
+      <div data-scroll-container>
+        <main data-barba="container" data-barba-namespace="home">
+          <div data-scroll-section>
+            <div class="container">
+              <div class="wrapper">
+                <section class="home-hero" data-home-hero>
+                  <div class="home-hero__panel home-hero__panel--editorial" data-editorial-panel>
+                    <div class="home-hero__fluid" data-home-fluid aria-hidden="true">
+                      <img
+                        class="home-hero__ink-poster"
+                        src="/images/bg_.webp"
+                        alt=""
+                        width="2048"
+                        height="1322"
+                        decoding="async"
+                        fetchpriority="high"
+                      />
+                    </div>
+                    <div class="home-hero__static-bg" aria-hidden="true">
+                      <img
+                        src="/images/bg_.webp"
+                        alt=""
+                        width="2048"
+                        height="1322"
+                        decoding="async"
+                        fetchpriority="high"
+                      />
+                    </div>
+                    <div class="home-hero__editorial" data-editorial-layout>
+                      <div class="home-hero__background" aria-hidden="true"></div>
+                      <div
+                        class="home-hero__figure home-hero__figure--editorial"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          class="home-hero__silhouette"
+                          width="656"
+                          height="983"
+                          viewBox="0 0 656 983"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="home-hero__silhouette-path"
+                            d="M332.805 120.571C330.691 121.019 327.552 121.851 325.758 122.363C324.028 122.939 320.569 123.899 318.07 124.475C312.048 125.819 309.23 127.291 303.912 131.707C301.478 133.755 297.827 136.378 295.712 137.594C291.805 139.962 287.512 144.25 285.975 147.514L285.014 149.434L286.488 147.514C288.281 145.082 291.036 142.458 293.662 140.666C294.944 139.77 294.175 140.858 291.548 143.674C287.256 148.41 285.078 152.378 281.939 161.529C279.889 167.353 279.377 174.009 280.594 177.913C280.85 178.809 280.914 177.593 280.722 174.969C280.53 171.641 280.722 169.529 281.555 166.969C282.772 163.193 284.245 160.953 283.348 164.153C282.58 167.033 282.836 177.657 283.797 182.073C285.142 188.536 287.641 195.128 291.869 203.512C298.916 217.527 302.439 230.007 301.35 237.174L300.966 239.99L294.88 239.926C290.459 239.862 288.537 240.118 287.961 240.694C287.577 241.206 286.808 245.174 286.423 249.59C285.334 260.533 282.772 272.757 280.53 277.877C279.505 280.181 278.672 282.805 278.672 283.636C278.672 285.876 273.227 292.34 258.3 307.827C250.997 315.443 243.438 323.507 241.452 325.747C236.262 331.698 228.767 341.682 227.294 344.498C223.386 352.178 214.673 394.928 204.68 455.341C202.053 471.533 196.928 502.06 193.405 523.179C189.881 544.298 185.973 567.785 184.756 575.337C174.827 636.838 169.381 672.613 166.242 697.572C164.128 714.211 156.633 786.656 153.75 817.887C150.867 849.821 149.906 861.405 149.906 864.157C149.906 866.845 150.034 867.101 152.02 867.741C154.455 868.573 174.698 874.268 187.511 877.788C197.505 880.476 197.312 880.348 197.312 885.98C197.312 888.668 197.825 889.244 200.836 890.46C204.359 891.868 231.778 899.291 241.003 901.339C251.702 903.771 250.677 902.811 250.228 909.979C250.036 913.371 248.947 929.37 247.922 945.562C246.897 961.753 245.872 976.792 245.68 979.032L245.295 983H348.116H450.936L451.256 979.608C452.73 965.657 454.267 909.915 454.331 871.325C454.331 829.47 452.666 789.344 449.719 760.609C449.398 757.473 449.206 754.849 449.27 754.849C451.384 753.697 465.862 743.906 470.347 740.578C480.789 732.898 497.125 718.115 497.125 716.387C497.125 716.003 494.434 706.915 491.103 696.228C475.152 644.71 463.812 602.855 456.509 568.937C455.292 563.113 453.05 553.193 451.641 546.858C450.231 540.522 447.156 526.699 444.85 516.139C442.544 505.579 439.853 494.06 438.828 490.54C433.575 472.557 423.966 447.534 396.227 379.825C392.639 370.993 387.642 358.769 385.144 352.626C382.645 346.482 378.161 335.538 375.086 328.307L369.512 315.187L370.153 306.867C370.73 299.764 371.178 297.46 373.42 291.252C375.406 285.556 375.855 283.7 375.278 282.996C374.83 282.549 371.883 279.925 368.744 277.237C365.541 274.613 362.914 272.245 362.914 272.053C362.914 271.605 366.117 265.909 368.487 262.005C370.153 259.381 370.409 259.189 373.036 259.189C374.509 259.189 378.353 259.957 381.492 260.853C390.461 263.541 398.405 262.965 399.494 259.637C399.686 258.933 399.686 255.798 399.43 252.662L398.981 246.966L401.223 244.918C402.825 243.382 403.53 242.166 403.786 240.182C403.978 238.71 404.683 236.726 405.452 235.766C406.284 234.742 406.797 233.143 406.797 231.607C406.797 228.087 407.694 226.231 410.192 224.759C411.473 224.055 412.947 222.711 413.587 221.815C414.612 220.151 414.612 220.023 409.744 210.551C404.427 200.12 403.914 197.688 406.156 194.552C408.911 190.712 409.295 188.92 408.27 184.696C407.758 182.521 406.541 176.313 405.516 170.873C404.491 165.433 403.466 160.441 403.209 159.802C402.889 158.906 403.402 158.138 405.003 156.794C409.552 153.018 410.577 147.386 407.758 141.626C406.541 139.258 404.747 137.338 400.839 134.267C394.753 129.467 391.166 127.995 385.144 127.995C382.197 127.995 379.955 127.547 377.969 126.651C372.652 124.219 370.025 123.387 365.477 122.875C363.042 122.555 359.006 121.915 356.508 121.339C350.166 119.931 337.545 119.547 332.805 120.571ZM372.139 125.819C373.997 126.331 375.406 126.907 375.214 127.099C375.086 127.291 372.972 126.843 370.537 126.139C368.103 125.435 366.694 124.859 367.462 124.859C368.167 124.795 370.281 125.243 372.139 125.819ZM315.188 127.995C313.458 128.955 307.5 131.195 307.5 130.811C307.5 130.299 314.098 127.355 315.188 127.355C316.02 127.419 316.02 127.483 315.188 127.995ZM394.753 131.579C395.714 132.091 396.675 132.795 396.931 133.179C397.252 133.691 397.123 133.755 396.547 133.435C396.098 133.179 393.792 132.219 391.486 131.387C387.514 129.979 387.45 129.915 390.141 130.299C391.742 130.555 393.792 131.131 394.753 131.579ZM404.17 145.274C404.106 147.578 404.042 147.834 403.658 146.554C403.402 145.658 402.953 143.674 402.761 142.074C402.312 139.322 402.377 139.258 403.273 140.794C403.786 141.69 404.17 143.674 404.17 145.274ZM407.502 150.458C407.117 151.738 406.284 153.21 405.708 153.658C404.747 154.49 404.747 154.426 405.708 152.57C406.284 151.418 406.989 149.306 407.245 147.77C407.63 145.658 407.758 145.338 407.95 146.554C408.078 147.386 407.886 149.178 407.502 150.458ZM403.402 149.882C403.209 150.394 403.017 150.202 403.017 149.498C402.953 148.794 403.145 148.41 403.337 148.666C403.53 148.858 403.594 149.434 403.402 149.882Z"
+                            fill="#fefff8"
+                          />
+                        </svg>
+                      </div>
+
+                      <h1 class="home-hero__title" data-editorial-title>
+                        <span class="home-hero__word home-hero__word--douglus">
+                          <span class="home-hero__initial-track" data-editorial-initial-track>
+                            <span class="home-hero__initial-mask">
+                              <span class="home-hero__initial font-rox" data-editorial-initial>
+                                D
+                              </span>
+                            </span>
+                          </span>
+
+                          <span class="home-hero__rest-mask">
+                            <span class="home-hero__rest" data-editorial-rest> ouglus </span>
+                          </span>
+                        </span>
+
+                        <span class="home-hero__word home-hero__word--nguyen">
+                          <span class="home-hero__initial-track" data-editorial-initial-track>
+                            <span class="home-hero__initial-mask">
+                              <span class="home-hero__initial font-rox" data-editorial-initial>
+                                N
+                              </span>
+                            </span>
+                          </span>
+
+                          <span class="home-hero__rest-mask">
+                            <span class="home-hero__rest" data-editorial-rest> guyen </span>
+                          </span>
+                        </span>
+                      </h1>
+
+                      <div class="home-hero__intro">
+                        <div class="home-hero__reveal-mask text-reveal-mask">
+                          <p class="home-hero__description" data-editorial-reveal>
+                            Just a designer &amp; developer trying<br />
+                            to make good things for the web.
+                          </p>
+                        </div>
+
+                        <div class="home-hero__reveal-mask text-reveal-mask">
+                          <p class="home-hero__description" data-editorial-reveal>
+                            Based in Ho Chi Minh City, Vietnam,<br />
+                            working with clients worldwide.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="home-hero__origin">
+                        <div class="home-hero__reveal-mask text-reveal-mask">
+                          <span class="home-hero__origin-text" data-editorial-reveal>
+                            From Vietnam with Love.
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="home-hero__cta">
+                        <span class="home-hero__reveal-mask text-reveal-mask">
+                          <a
+                            href="https://www.linkedin.com/in/douglus-nguyen-a48961265"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="home-hero__cta-label"
+                            data-editorial-reveal
+                          >
+                            <span class="home-hero__cta-label-mask">
+                              <span class="home-hero__cta-label-track">
+                                <span>LinkedIn</span>
+                                <span>LinkedIn</span>
+                              </span>
+                            </span>
+                          </a>
+                        </span>
+
+                        <span class="home-hero__reveal-mask text-reveal-mask">
+                          <a
+                            href="tel:+84393277584"
+                            class="home-hero__cta-label"
+                            data-editorial-reveal
+                          >
+                            <span class="home-hero__cta-label-mask">
+                              <span class="home-hero__cta-label-track">
+                                <span>+84 39 327 7584</span>
+                                <span>+84 39 327 7584</span>
+                              </span>
+                            </span>
+                          </a>
+                        </span>
+
+                        <span class="home-hero__reveal-mask text-reveal-mask">
+                          <a
+                            href="mailto:hello@douglus.co"
+                            class="home-hero__cta-label"
+                            data-editorial-reveal
+                          >
+                            <span class="home-hero__cta-label-mask">
+                              <span class="home-hero__cta-label-track">
+                                <span>hello@douglus.co</span>
+                                <span>hello@douglus.co</span>
+                              </span>
+                            </span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="home-hero__panel home-hero__panel--brutalism" data-brutalism-panel>
+                    <div class="home-hero__brutalism" data-brutalism-layout>
+                      <div class="home-hero__brutal-background" aria-hidden="true"></div>
+                      <div class="home-hero__brutal-top">
+                        <div class="home-hero__brutal-web">
+                          <div class="home-hero__brutal-reveal-mask">
+                            <svg
+                              width="432"
+                              height="143"
+                              viewBox="0 0 432 143"
+                              fill="none"
+                              class="home-hero__brutal-text home-hero__brutal-text--web"
+                              xmlns="http://www.w3.org/2000/svg"
+                              data-brutal-reveal
+                              data-brutal-role="frame-top"
+                            >
+                              <path
+                                d="M0 -6.67572e-06H36L54.4 97H54.8L77 -6.67572e-06H111L133.2 97H133.6L152 -6.67572e-06H188L151.6 143H115.6L94.2 53.8H93.8L72.4 143H36.4L0 -6.67572e-06ZM227.886 54.8H290.286V84.2H227.886V113.6H301.486V143H191.886V-6.67572e-06H300.286V29.4H227.886V54.8ZM426.272 36C426.272 53.6 415.872 62.4 404.072 66.4V66.8C419.072 69.4 431.872 79.4 431.872 100.8C431.872 131.2 412.472 143 382.872 143H311.472V-6.67572e-06H380.872C410.672 -6.67572e-06 426.272 11.6 426.272 36ZM347.472 57.8H372.272C382.272 57.8 390.272 55.4 390.272 43.6C390.272 31.8 382.272 29.4 372.272 29.4H347.472V57.8ZM347.472 79.8V113.6H373.272C388.272 113.6 395.872 110 395.872 96.6C395.872 83.2 388.272 79.8 373.272 79.8H347.472Z"
+                                fill="#fefff8"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="home-hero__brutal-design-group">
+                          <div class="home-hero__brutal-reveal-mask">
+                            <svg
+                              width="692"
+                              height="150"
+                              viewBox="0 0 692 150"
+                              fill="none"
+                              class="home-hero__brutal-text home-hero__brutal-text--design"
+                              xmlns="http://www.w3.org/2000/svg"
+                              data-brutal-reveal
+                              data-brutal-role="frame-top"
+                            >
+                              <path
+                                d="M0.000195801 146.2V3.20019H63.4002C103.2 3.20019 127.2 28.8002 127.2 74.8002C127.2 120.8 105.2 146.2 65.4002 146.2H0.000195801ZM36.0002 32.6002V116.8H59.8002C82.2002 116.8 91.2002 100.8 91.2002 74.8002C91.2002 48.8002 82.2002 32.6002 59.8002 32.6002H36.0002ZM171.016 58.0002H233.416V87.4002H171.016V116.8H244.616V146.2H135.016V3.20019H243.416V32.6002H171.016V58.0002ZM313.825 57.4002C340.825 64.8002 368.625 73.6002 368.625 104.2C368.625 131.6 347.825 149.4 312.025 149.4C274.825 149.4 246.825 131 246.825 99.2002H282.825C282.825 114.4 296.025 120 312.025 120C325.425 120 332.625 114.8 332.625 107.6C332.625 96.2002 317.225 93.6002 297.025 87.6002C272.425 80.4002 250.825 69.8002 250.825 43.4002C250.825 12.2002 275.225 0.000194073 306.025 0.000194073C339.425 0.000194073 365.625 17.6002 366.625 46.6002H330.625C329.025 35.8002 319.825 29.4002 306.025 29.4002C295.225 29.4002 286.825 32.8002 286.825 40.8002C286.825 49.6002 295.825 52.4002 313.825 57.4002ZM377.317 3.20019H413.317V146.2H377.317V3.20019ZM519.953 50.6002C517.353 40.8002 510.753 29.4002 490.953 29.4002C467.353 29.4002 458.353 47.8002 458.353 74.6002C458.353 101.6 467.353 120 492.353 120C508.953 120 520.553 110 520.953 96.2002H493.753V70.2002H558.153V146.2H532.353L528.753 128H528.353C521.553 141 508.153 149.4 487.153 149.4C446.553 149.4 422.353 117.8 422.353 74.6002C422.353 31.6002 446.553 0.000194073 491.553 0.000194073C530.753 0.000194073 552.553 23.2002 555.953 50.6002H519.953ZM569.414 146.2V3.20019H605.414L655.414 88.2002H655.814V3.20019H691.814V146.2H655.814L605.814 61.2002H605.414V146.2H569.414Z"
+                                fill="#fefff8"
+                              />
+                            </svg>
+                          </div>
+
+                          <div class="home-hero__brutal-info" data-brutal-info>
+                            <div class="home-hero__brutal-reveal-mask text-reveal-mask">
+                              <p
+                                class="home-hero__brutal-name"
+                                data-brutal-reveal
+                                data-brutal-role="label-id"
+                              >
+                                Douglus Nguyen
+                              </p>
+                            </div>
+
+                            <div class="home-hero__brutal-reveal-mask text-reveal-mask">
+                              <p
+                                class="home-hero__brutal-description"
+                                data-brutal-reveal
+                                data-brutal-role="label-body"
+                              >
+                                Just a designer &amp; developer trying<br />
+                                to make good things for the web.
+                              </p>
+                            </div>
+
+                            <div class="home-hero__brutal-reveal-mask text-reveal-mask">
+                              <p
+                                class="home-hero__brutal-location"
+                                data-brutal-reveal
+                                data-brutal-role="label-body"
+                              >
+                                Based in Ho Chi Minh City, Viet Nam,<br />
+                                working with clients worldwide.
+                              </p>
+                            </div>
+
+                            <div class="home-hero__brutal-actions">
+                              <div class="home-hero__brutal-reveal-mask text-reveal-mask">
+                                <span
+                                  class="home-hero__brutal-origin"
+                                  data-brutal-reveal
+                                  data-brutal-role="label-action"
+                                >
+                                  From Vietnam with Love
+                                </span>
+                              </div>
+
+                              <a href="/contact" class="home-hero__brutal-cta">
+                                <span
+                                  class="home-hero__brutal-reveal-mask text-reveal-mask shift-text-to-right shift-1"
+                                >
+                                  <strong data-brutal-reveal data-brutal-role="label-action">
+                                    Let's Work Together!
+                                  </strong>
+                                </span>
+                              </a>
+
+                              <div
+                                class="home-hero__brutal-reveal-mask home-hero__brutal-email text-reveal-mask shift-text-to-right shift-2"
+                              >
+                                <a
+                                  href="mailto:hello@douglus.co"
+                                  data-brutal-reveal
+                                  data-brutal-role="label-action"
+                                >
+                                  hello@douglus.co
+                                </a>
+                              </div>
+
+                              <div
+                                class="home-hero__brutal-reveal-mask text-reveal-mask shift-text-to-right shift-3"
+                              >
+                                <a href="tel:+84393277584" class="home-hero__brutal-link">
+                                  <span data-brutal-reveal data-brutal-role="label-action">
+                                    +84 39 327 7584
+                                  </span>
+                                </a>
+                              </div>
+
+                              <div
+                                class="home-hero__brutal-reveal-mask text-reveal-mask shift-text-to-right shift-4"
+                              >
+                                <a
+                                  href="https://www.linkedin.com/in/douglus-nguyen-a48961265"
+                                  class="home-hero__brutal-link"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <span data-brutal-reveal data-brutal-role="label-action">
+                                    LinkedIn
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="home-hero__figure home-hero__figure--brutalism"
+                        aria-hidden="true"
+                        data-brutal-role="subject"
+                      >
+                        <svg
+                          class="home-hero__silhouette"
+                          width="656"
+                          height="983"
+                          viewBox="0 0 656 983"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="home-hero__silhouette-path"
+                            d="M332.805 120.571C330.691 121.019 327.552 121.851 325.758 122.363C324.028 122.939 320.569 123.899 318.07 124.475C312.048 125.819 309.23 127.291 303.912 131.707C301.478 133.755 297.827 136.378 295.712 137.594C291.805 139.962 287.512 144.25 285.975 147.514L285.014 149.434L286.488 147.514C288.281 145.082 291.036 142.458 293.662 140.666C294.944 139.77 294.175 140.858 291.548 143.674C287.256 148.41 285.078 152.378 281.939 161.529C279.889 167.353 279.377 174.009 280.594 177.913C280.85 178.809 280.914 177.593 280.722 174.969C280.53 171.641 280.722 169.529 281.555 166.969C282.772 163.193 284.245 160.953 283.348 164.153C282.58 167.033 282.836 177.657 283.797 182.073C285.142 188.536 287.641 195.128 291.869 203.512C298.916 217.527 302.439 230.007 301.35 237.174L300.966 239.99L294.88 239.926C290.459 239.862 288.537 240.118 287.961 240.694C287.577 241.206 286.808 245.174 286.423 249.59C285.334 260.533 282.772 272.757 280.53 277.877C279.505 280.181 278.672 282.805 278.672 283.636C278.672 285.876 273.227 292.34 258.3 307.827C250.997 315.443 243.438 323.507 241.452 325.747C236.262 331.698 228.767 341.682 227.294 344.498C223.386 352.178 214.673 394.928 204.68 455.341C202.053 471.533 196.928 502.06 193.405 523.179C189.881 544.298 185.973 567.785 184.756 575.337C174.827 636.838 169.381 672.613 166.242 697.572C164.128 714.211 156.633 786.656 153.75 817.887C150.867 849.821 149.906 861.405 149.906 864.157C149.906 866.845 150.034 867.101 152.02 867.741C154.455 868.573 174.698 874.268 187.511 877.788C197.505 880.476 197.312 880.348 197.312 885.98C197.312 888.668 197.825 889.244 200.836 890.46C204.359 891.868 231.778 899.291 241.003 901.339C251.702 903.771 250.677 902.811 250.228 909.979C250.036 913.371 248.947 929.37 247.922 945.562C246.897 961.753 245.872 976.792 245.68 979.032L245.295 983H348.116H450.936L451.256 979.608C452.73 965.657 454.267 909.915 454.331 871.325C454.331 829.47 452.666 789.344 449.719 760.609C449.398 757.473 449.206 754.849 449.27 754.849C451.384 753.697 465.862 743.906 470.347 740.578C480.789 732.898 497.125 718.115 497.125 716.387C497.125 716.003 494.434 706.915 491.103 696.228C475.152 644.71 463.812 602.855 456.509 568.937C455.292 563.113 453.05 553.193 451.641 546.858C450.231 540.522 447.156 526.699 444.85 516.139C442.544 505.579 439.853 494.06 438.828 490.54C433.575 472.557 423.966 447.534 396.227 379.825C392.639 370.993 387.642 358.769 385.144 352.626C382.645 346.482 378.161 335.538 375.086 328.307L369.512 315.187L370.153 306.867C370.73 299.764 371.178 297.46 373.42 291.252C375.406 285.556 375.855 283.7 375.278 282.996C374.83 282.549 371.883 279.925 368.744 277.237C365.541 274.613 362.914 272.245 362.914 272.053C362.914 271.605 366.117 265.909 368.487 262.005C370.153 259.381 370.409 259.189 373.036 259.189C374.509 259.189 378.353 259.957 381.492 260.853C390.461 263.541 398.405 262.965 399.494 259.637C399.686 258.933 399.686 255.798 399.43 252.662L398.981 246.966L401.223 244.918C402.825 243.382 403.53 242.166 403.786 240.182C403.978 238.71 404.683 236.726 405.452 235.766C406.284 234.742 406.797 233.143 406.797 231.607C406.797 228.087 407.694 226.231 410.192 224.759C411.473 224.055 412.947 222.711 413.587 221.815C414.612 220.151 414.612 220.023 409.744 210.551C404.427 200.12 403.914 197.688 406.156 194.552C408.911 190.712 409.295 188.92 408.27 184.696C407.758 182.521 406.541 176.313 405.516 170.873C404.491 165.433 403.466 160.441 403.209 159.802C402.889 158.906 403.402 158.138 405.003 156.794C409.552 153.018 410.577 147.386 407.758 141.626C406.541 139.258 404.747 137.338 400.839 134.267C394.753 129.467 391.166 127.995 385.144 127.995C382.197 127.995 379.955 127.547 377.969 126.651C372.652 124.219 370.025 123.387 365.477 122.875C363.042 122.555 359.006 121.915 356.508 121.339C350.166 119.931 337.545 119.547 332.805 120.571ZM372.139 125.819C373.997 126.331 375.406 126.907 375.214 127.099C375.086 127.291 372.972 126.843 370.537 126.139C368.103 125.435 366.694 124.859 367.462 124.859C368.167 124.795 370.281 125.243 372.139 125.819ZM315.188 127.995C313.458 128.955 307.5 131.195 307.5 130.811C307.5 130.299 314.098 127.355 315.188 127.355C316.02 127.419 316.02 127.483 315.188 127.995ZM394.753 131.579C395.714 132.091 396.675 132.795 396.931 133.179C397.252 133.691 397.123 133.755 396.547 133.435C396.098 133.179 393.792 132.219 391.486 131.387C387.514 129.979 387.45 129.915 390.141 130.299C391.742 130.555 393.792 131.131 394.753 131.579ZM404.17 145.274C404.106 147.578 404.042 147.834 403.658 146.554C403.402 145.658 402.953 143.674 402.761 142.074C402.312 139.322 402.377 139.258 403.273 140.794C403.786 141.69 404.17 143.674 404.17 145.274ZM407.502 150.458C407.117 151.738 406.284 153.21 405.708 153.658C404.747 154.49 404.747 154.426 405.708 152.57C406.284 151.418 406.989 149.306 407.245 147.77C407.63 145.658 407.758 145.338 407.95 146.554C408.078 147.386 407.886 149.178 407.502 150.458ZM403.402 149.882C403.209 150.394 403.017 150.202 403.017 149.498C402.953 148.794 403.145 148.41 403.337 148.666C403.53 148.858 403.594 149.434 403.402 149.882Z"
+                            fill="#fefff8"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="home-hero__brutal-development">
+                        <div
+                          class="home-hero__brutal-reveal-mask home-hero__brutal-reveal-mask--development"
+                        >
+                          <svg
+                            class="home-hero__brutal-text home-hero__brutal-text--development"
+                            width="1632"
+                            height="160"
+                            viewBox="0 0 1632 160"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            data-brutal-reveal
+                            data-brutal-role="frame-bottom"
+                          >
+                            <path
+                              d="M0 90H224"
+                              stroke="#fefff8"
+                              stroke-width="20"
+                              data-brutal-role="connector"
+                            />
+
+                            <path
+                              d="M233.8 154V11H297.2C337 11 361 36.6 361 82.6C361 128.6 339 154 299.2 154H233.8ZM269.8 40.4V124.6H293.6C316 124.6 325 108.6 325 82.6C325 56.6 316 40.4 293.6 40.4H269.8ZM404.816 65.8H467.216V95.2H404.816V124.6H478.416V154H368.816V11H477.216V40.4H404.816V65.8ZM478.202 11H516.402L543.402 111.2H543.802L571.002 11H609.002L562.602 154H524.602L478.202 11ZM648.675 65.8H711.075V95.2H648.675V124.6H722.275V154H612.675V11H721.075V40.4H648.675V65.8ZM732.261 11H768.261V124.6H831.861V154H732.261V11ZM899.269 157.2C853.869 157.2 828.469 125.6 828.469 82.4C828.469 39.4 853.869 7.8 899.269 7.8C944.269 7.8 970.069 39.4 970.069 82.4C970.069 125.6 944.269 157.2 899.269 157.2ZM899.269 127.8C925.269 127.8 934.069 107.4 934.069 82.4C934.069 57.6 925.269 37.2 899.269 37.2C873.069 37.2 864.469 57.6 864.469 82.4C864.469 107.4 873.069 127.8 899.269 127.8ZM977.878 154V11H1047.28C1077.08 11 1095.68 26.6 1095.68 56.6C1095.68 86.6 1077.08 102.2 1047.28 102.2H1013.88V154H977.878ZM1013.88 40.4V72.8H1039.68C1052.08 72.8 1059.68 68.6 1059.68 56.6C1059.68 44.6 1052.08 40.4 1039.68 40.4H1013.88ZM1102.35 154V11H1146.35L1175.75 102.2H1176.15L1205.55 11H1249.55V154H1215.55V65H1215.15L1188.55 154H1163.35L1136.75 65H1136.35V154H1102.35ZM1299.14 65.8H1361.54V95.2H1299.14V124.6H1372.74V154H1263.14V11H1371.54V40.4H1299.14V65.8ZM1382.73 154V11H1418.73L1468.73 96H1469.13V11H1505.13V154H1469.13L1419.13 69H1418.73V154H1382.73ZM1550.99 154V40.4H1509.39V11H1628.39V40.4H1586.99V154H1550.99Z"
+                              fill="#fefff8"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="home-hero__mode-control">
+                    <span class="home-hero__mode-label"> Layout: </span>
+
+                    <button
+                      class="home-hero__mode-switch"
+                      type="button"
+                      aria-label="Switch between editorial and brutalism layout"
+                      aria-pressed="false"
+                      data-mode-switch
+                    >
+                      <span class="home-hero__mode is-active editorial" data-mode="editorial">
+                        Fine
+                      </span>
+
+                      <span class="home-hero__mode-divider" aria-hidden="true"> / </span>
+
+                      <span class="home-hero__mode brutalism" data-mode="brutalism"> Bold </span>
+                    </button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-transition-veil" aria-hidden="true"></div>
+        </main>
+      </div>
+    </div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"658f1799687248b1840de57d3ac26624","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+

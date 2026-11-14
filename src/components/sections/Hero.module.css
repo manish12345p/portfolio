@@ -1,305 +1,243 @@
-/* ---------- HERO ---------- */
-.hero {
+.heroSection {
   position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 56px;
+  padding-bottom: 80px;
   overflow: hidden;
-  background: var(--void);
-  padding: 12vh 4vw 8vh;
 }
 
 .heroGrid {
-  position: relative;
-  z-index: 3;
-  max-width: 1300px;
-  width: 100%;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
+  gap: 48px;
   align-items: center;
-  gap: 3vw;
 }
 
-.heroCopy {
-  position: relative;
+@media (min-width: 960px) {
+  .heroGrid {
+    grid-template-columns: 1.12fr 0.88fr;
+    gap: 56px;
+  }
 }
 
-.eyebrowRow {
+/* Left Column */
+.leftColumn {
   display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 10;
+}
+
+.statusPill {
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 0.68rem;
-  letter-spacing: 0.4em;
-  color: var(--oxblood-glow);
-  margin-bottom: 1.6rem;
+  gap: 10px;
+  align-self: flex-start;
 }
 
-.eyebrowRow::before {
-  content: "";
-  width: 34px;
-  height: 1px;
-  background: var(--oxblood-bright);
-}
-
-.eyebrowRow::after {
-  content: "";
-  width: 5px;
-  height: 5px;
+.statusDot {
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: var(--eden-glow);
-  box-shadow: 0 0 6px 1px var(--eden-glow);
-  animation: sigilPulse 3.6s ease-in-out infinite;
+  background-color: var(--orange);
+  box-shadow: 0 0 10px var(--orange);
+  animation: pulseDot 2s infinite ease-in-out;
 }
 
-@keyframes sigilPulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 1; }
+@keyframes pulseDot {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 14px var(--orange);
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
 }
 
-.titleStack {
+.titleMask {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.tagline {
-  font-family: var(--font-oswald), sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: clamp(0.9rem, 1.4vw, 1.15rem);
-  color: var(--bone-dim);
-  max-width: 480px;
-  margin: 1.8rem 0 2.4rem;
-  line-height: 1.7;
-  border-left: 2px solid var(--oxblood-bright);
-  padding-left: 1.2rem;
+.heading {
+  font-family: var(--font-display, 'Fraunces', serif);
+  font-size: clamp(44px, 8vw, 104px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  margin: 0;
+  word-break: break-word;
 }
 
-.heroCta {
+.nameFirst {
+  display: block;
+  color: var(--red);
+}
+
+.nameLast {
+  display: block;
+  color: var(--maroon);
+}
+
+.roleText {
+  font-family: var(--font-display, 'Fraunces', serif);
+  font-size: clamp(20px, 2.6vw, 28px);
+  color: var(--ink);
+  line-height: 1.25;
+  font-weight: 500;
+  margin: 0;
+}
+
+.taglineText {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 54ch;
+  margin: 0;
+}
+
+.buttonGroup {
   display: flex;
-  gap: 1.1rem;
+  align-items: center;
+  gap: 14px;
   flex-wrap: wrap;
+  padding-top: 4px;
 }
 
-/* ---------- TVA TERMINAL PANEL ---------- */
-.terminal {
-  margin-top: 2.2rem;
-  max-width: 480px;
-  border: 1px solid var(--amber-dim);
-  background: linear-gradient(180deg, rgba(30,18,4,0.6), rgba(10,6,2,0.8));
-  padding: 1rem 1.2rem;
+/* Right Column: Visual Stage */
+.rightColumn {
   position: relative;
-  overflow: hidden;
-}
-
-.terminal::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.15;
-  background: repeating-linear-gradient(to bottom, rgba(255,159,61,0.4) 0px, rgba(255,159,61,0.4) 1px, transparent 1px, transparent 3px);
-}
-
-.terminalHead {
   display: flex;
-  justify-content: space-between;
-  font-family: var(--font-ibm), monospace;
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
-  color: var(--amber);
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.terminalBody {
-  font-family: var(--font-ibm), monospace;
-  font-size: 0.85rem;
-  color: var(--amber-bright);
-  text-shadow: 0 0 6px rgba(255,159,61,0.5);
-  min-height: 1.4em;
+.visualWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.terminalCursor {
-  display: inline-block;
+@media (max-width: 959px) {
+  .visualWrapper {
+    max-width: 420px;
+  }
+}
+
+/* Blurred Ambient Circle */
+.blurCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 82%;
+  height: 82%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 16, 46, 0.22) 0%, rgba(255, 153, 51, 0.25) 50%, rgba(253, 241, 236, 0) 75%);
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main 3D Developer Image */
+.heroImage {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(42, 15, 20, 0.08));
+}
+
+/* Floating Chips */
+.floatingChip {
+  position: absolute;
+  z-index: 10;
+  background-color: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(42, 15, 20, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  padding: 8px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.chipDotFlutter {
   width: 7px;
-  height: 1em;
-  background: var(--amber-bright);
-  margin-left: 2px;
-  vertical-align: text-bottom;
-  animation: blink 1s step-end infinite;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--red);
 }
 
-@keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+.chipDotDart {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--orange);
 }
 
-/* ---------- SCENE FRAME ---------- */
-.sceneFrame {
-  position: relative;
-  padding: 6px;
-  background: linear-gradient(155deg, var(--oxblood-bright), var(--wine) 40%, var(--black) 70%, var(--oxblood) 100%);
-  background-size: 250% 250%;
-  animation: borderFlow 14s ease infinite;
-  box-shadow: 0 40px 90px rgba(0,0,0,0.65);
-  transform: rotate(1.4deg);
+.chipDotFirebase {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--saffron);
 }
 
-@keyframes borderFlow {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
+/* Specific Positions for Floating Chips */
+.chipFlutter {
+  top: 8%;
+  left: 2%;
 }
 
-.sceneWrap {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.chipDart {
+  top: 40%;
+  right: -2%;
 }
 
-.scene {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease-out;
+.chipFirebase {
+  bottom: 8%;
+  left: 8%;
 }
 
-.frameCorner {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  border: 2px solid var(--gold-bright);
-  z-index: 2;
+@media (max-width: 500px) {
+  .chipFlutter {
+    top: 4%;
+    left: 0%;
+  }
+
+  .chipDart {
+    top: 36%;
+    right: 0%;
+  }
+
+  .chipFirebase {
+    bottom: 4%;
+    left: 4%;
+  }
 }
 
-.frameCorner.tl {
-  top: 6px;
-  left: 6px;
-  border-right: none;
-  border-bottom: none;
-}
-
-.frameCorner.br {
-  bottom: 6px;
-  right: 6px;
-  border-left: none;
-  border-top: none;
-}
-
-/* ---------- SORCERY / RUNE RING ---------- */
-.runeRing {
-  animation: runeSpin 40s linear infinite;
-  transform-origin: 430px 380px;
-}
-
-@keyframes runeSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.portalGlow {
-  animation: portalPulse 3.6s ease-in-out infinite;
-}
-
-@keyframes portalPulse {
-  0%, 100% { opacity: 0.35; }
-  45% { opacity: 0.35; }
-  50% { opacity: 0.9; }
-  55% { opacity: 0.4; }
-}
-
-.flourish {
-  position: absolute;
-  width: 34px;
-  height: 34px;
-  opacity: 0.8;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.flourish.tl { top: -4px; left: -4px; }
-.flourish.tr { top: -4px; right: -4px; transform: scaleX(-1); }
-.flourish.bl { bottom: -4px; left: -4px; transform: scaleY(-1); }
-.flourish.br { bottom: -4px; right: -4px; transform: scale(-1,-1); }
-
-.flourish svg {
-  width: 100%;
-  height: 100%;
-}
-
-.flourish path {
-  stroke: var(--gold);
-  stroke-width: 1.2;
-  fill: none;
-}
-
-.flourish circle {
-  fill: var(--eden-glow);
-  opacity: 0.7;
-}
-
-.glint {
-  animation: sweep 6s ease-in-out infinite;
-}
-
-@keyframes sweep {
-  0%, 85%, 100% { opacity: 0; transform: translateX(0); }
-  90% { opacity: 0.5; }
-  93% { opacity: 0.2; transform: translateX(40px); }
-}
-
-.kingEye {
-  animation: kingFlicker 5.5s ease-in-out infinite;
-}
-
-@keyframes kingFlicker {
-  0%, 90%, 100% { opacity: 0; }
-  92% { opacity: 0.9; }
-  94% { opacity: 0.1; }
-  96% { opacity: 0.7; }
-}
-
-/* Background SVGs */
-.canvasLayer {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.field {
-  position: absolute;
-}
-
-.field svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-@keyframes driftA {
-  0% { transform: translate(0,0) rotate(0deg) scale(1); }
-  50% { transform: translate(3%,-4%) rotate(3deg) scale(1.06); }
-  100% { transform: translate(-2%,3%) rotate(-2deg) scale(0.98); }
-}
-@keyframes driftB {
-  0% { transform: translate(0,0) rotate(0deg) scale(1); }
-  50% { transform: translate(-4%,3%) rotate(-4deg) scale(1.08); }
-  100% { transform: translate(3%,-3%) rotate(2deg) scale(0.96); }
-}
-@keyframes breathe {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.75; }
-}
-
-.field.fA { animation: driftA 26s ease-in-out infinite alternate; }
-.field.fB { animation: driftB 32s ease-in-out infinite alternate; }
-.field.fC { animation: driftA 22s ease-in-out infinite alternate-reverse; }
-.field.pulse { animation: breathe 6s ease-in-out infinite; }
-
-@media (max-width: 900px) {
-  .heroGrid { grid-template-columns: 1fr; }
-  .sceneFrame { order: -1; max-width: 380px; margin: 0 auto; transform: rotate(0.6deg); }
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .statusDot {
+    animation: none;
+  }
 }

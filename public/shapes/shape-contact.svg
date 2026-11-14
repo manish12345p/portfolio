@@ -1,0 +1,11 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concentric expanding sonar/signal wave rings -->
+  <circle cx="200" cy="200" r="140" stroke="#588157" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="200" cy="200" r="105" stroke="#5A9F68" stroke-width="2"/>
+  <circle cx="200" cy="200" r="70" stroke="#BBD58E" stroke-width="2.5"/>
+  <circle cx="200" cy="200" r="35" stroke="#BBD58E" stroke-width="3"/>
+  <circle cx="200" cy="200" r="12" fill="#BBD58E"/>
+  <line x1="60" y1="200" x2="340" y2="200" stroke="#BBD58E" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <line x1="200" y1="60" x2="200" y2="340" stroke="#BBD58E" stroke-width="1.5" stroke-dasharray="2 4"/>
+</svg>
+
